@@ -1,0 +1,12 @@
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\bin\Debug\net9.0\ExecutiveDisorder.Core.deps.json
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\bin\Debug\net9.0\ExecutiveDisorder.Core.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\bin\Debug\net9.0\ExecutiveDisorder.Core.pdb
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.AssemblyInfoInputs.cache
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.AssemblyInfo.cs
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.csproj.CoreCompileInputs.cache
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.sourcelink.json
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\refint\ExecutiveDisorder.Core.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ExecutiveDisorder.Core.pdb
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Core\obj\Debug\net9.0\ref\ExecutiveDisorder.Core.dll

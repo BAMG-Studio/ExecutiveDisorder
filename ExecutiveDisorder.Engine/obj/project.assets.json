@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "ExecutiveDisorder.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ExecutiveDisorder.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExecutiveDisorder.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ExecutiveDisorder.Core/1.0.0": {
+      "type": "project",
+      "path": "../ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj",
+      "msbuildProject": "../ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "ExecutiveDisorder.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\POK28\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj": {
+              "projectPath": "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

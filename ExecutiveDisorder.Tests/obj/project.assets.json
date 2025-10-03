@@ -411,6 +411,29 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "ExecutiveDisorder.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ExecutiveDisorder.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExecutiveDisorder.Core.dll": {}
+        }
+      },
+      "ExecutiveDisorder.Engine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ExecutiveDisorder.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ExecutiveDisorder.Engine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExecutiveDisorder.Engine.dll": {}
+        }
       }
     }
   },
@@ -932,10 +955,22 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "ExecutiveDisorder.Core/1.0.0": {
+      "type": "project",
+      "path": "../ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj",
+      "msbuildProject": "../ExecutiveDisorder.Core/ExecutiveDisorder.Core.csproj"
+    },
+    "ExecutiveDisorder.Engine/1.0.0": {
+      "type": "project",
+      "path": "../ExecutiveDisorder.Engine/ExecutiveDisorder.Engine.csproj",
+      "msbuildProject": "../ExecutiveDisorder.Engine/ExecutiveDisorder.Engine.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "ExecutiveDisorder.Core >= 1.0.0",
+      "ExecutiveDisorder.Engine >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -973,7 +1008,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj": {
+              "projectPath": "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj"
+            },
+            "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Engine\\ExecutiveDisorder.Engine.csproj": {
+              "projectPath": "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Engine\\ExecutiveDisorder.Engine.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

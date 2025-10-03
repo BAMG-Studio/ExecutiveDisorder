@@ -1,0 +1,16 @@
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\bin\Debug\net9.0\ExecutiveDisorder.Engine.deps.json
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\bin\Debug\net9.0\ExecutiveDisorder.Engine.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\bin\Debug\net9.0\ExecutiveDisorder.Engine.pdb
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\bin\Debug\net9.0\ExecutiveDisorder.Core.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\bin\Debug\net9.0\ExecutiveDisorder.Core.pdb
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.csproj.AssemblyReference.cache
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.AssemblyInfoInputs.cache
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.AssemblyInfo.cs
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.csproj.CoreCompileInputs.cache
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.sourcelink.json
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\Executiv.962F0DCC.Up2Date
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\refint\ExecutiveDisorder.Engine.dll
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ExecutiveDisorder.Engine.pdb
+C:\Users\POK28\source\repos\ExecutiveDisorderReplit\ExecutiveDisorder.Engine\obj\Debug\net9.0\ref\ExecutiveDisorder.Engine.dll
