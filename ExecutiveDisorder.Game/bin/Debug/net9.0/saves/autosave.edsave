@@ -1,0 +1,18 @@
+{
+  "CurrentDay": 5,
+  "TotalDecisions": 4,
+  "ChaosScore": 0,
+  "Resources": {
+    "Popularity": 67,
+    "Stability": 55,
+    "MediaTrust": 40,
+    "EconomicHealth": 55
+  },
+  "DecisionHistory": [
+    "Day 1: Card CARD_062, Choice 1",
+    "Day 2: Card NORMAL_002, Choice 3",
+    "Day 3: Card CARD_068, Choice 2",
+    "Day 4: Card CARD_017, Choice 1"
+  ],
+  "SaveTime": "2025-10-04T14:21:57.2587691-05:00"
+}
