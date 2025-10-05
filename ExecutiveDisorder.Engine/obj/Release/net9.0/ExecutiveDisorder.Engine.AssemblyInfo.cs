@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExecutiveDisorder.Engine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34647cec01de8c2942936b157ddc2ffac7f7b2da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09bacde5cd082d778046493c985aedbd15235b95")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExecutiveDisorder.Engine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExecutiveDisorder.Engine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
