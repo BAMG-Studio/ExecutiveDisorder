@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExecutiveDisorder.Game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09bacde5cd082d778046493c985aedbd15235b95")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+756c145456474613b4b3f8d095e280e2b5fdd13e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExecutiveDisorder.Game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExecutiveDisorder.Game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
