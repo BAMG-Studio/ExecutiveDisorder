@@ -5,6 +5,8 @@ from psycopg2.extras import RealDictCursor
 import os
 from datetime import datetime
 import hashlib
+import openai
+import requests
 
 app = Flask(__name__)
 CORS(app)
@@ -57,6 +59,98 @@ def get_saves(user_id):
         cur.execute("SELECT * FROM game_saves WHERE user_id = %s ORDER BY created_at DESC", (user_id,))
         saves = cur.fetchall()
     return jsonify(saves)
+
+# AI Content Generation Endpoints
+
+@app.route('/api/ai/generate-cards', methods=['POST'])
+def generate_cards():
+    """Generate decision cards using OpenAI GPT"""
+    data = request.json
+    theme = data.get('theme', 'General Policy')
+    count = data.get('count', 1)
+    
+    openai_key = os.getenv('OPENAI_API_KEY')
+    if not openai_key:
+        return jsonify({'error': 'OpenAI API key not configured'}), 500
+    
+    try:
+        openai.api_key = openai_key
+        
+        prompt = f"""Generate {count} decision cards for Executive Disorder, a political simulation game.
+        
+Theme: {theme}
+
+For each card, provide:
+1. Title (10-15 words)
+2. Description (30-50 words)
+3. 2-3 choices with consequences for: Popularity, Stability, MediaTrust, EconomicHealth (values -20 to +20)
+
+Format as JSON array."""
+        
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a creative writer for a political simulation game. Generate balanced, realistic decision cards."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=1500,
+            temperature=0.8
+        )
+        
+        generated_content = response.choices[0].message.content
+        return jsonify({'cards': generated_content, 'count': count}), 200
+        
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/ai/generate-image', methods=['POST'])
+def generate_image():
+    """Generate images using DALL-E 3"""
+    data = request.json
+    prompt = data.get('prompt', '')
+    
+    openai_key = os.getenv('OPENAI_API_KEY')
+    if not openai_key:
+        return jsonify({'error': 'OpenAI API key not configured'}), 500
+    
+    try:
+        openai.api_key = openai_key
+        
+        response = openai.Image.create(
+            model="dall-e-3",
+            prompt=prompt,
+            size="1024x1024",
+            quality="standard",
+            n=1
+        )
+        
+        image_url = response.data[0].url
+        return jsonify({'image_url': image_url}), 200
+        
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/ai/test-balance', methods=['POST'])
+def test_balance():
+    """Endpoint for ML-Agents to submit test results"""
+    data = request.json
+    test_results = data.get('results', [])
+    
+    # Analyze results and provide balance suggestions
+    analysis = {
+        'total_tests': len(test_results),
+        'avg_survival_days': sum(r.get('days_survived', 0) for r in test_results) / max(len(test_results), 1),
+        'win_rate': sum(1 for r in test_results if r.get('won', False)) / max(len(test_results), 1),
+        'suggestions': []
+    }
+    
+    # Add balance suggestions based on results
+    if analysis['win_rate'] < 0.3:
+        analysis['suggestions'].append('Game is too difficult - consider reducing negative consequences')
+    elif analysis['win_rate'] > 0.7:
+        analysis['suggestions'].append('Game is too easy - consider increasing challenge')
+    
+    return jsonify(analysis), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
