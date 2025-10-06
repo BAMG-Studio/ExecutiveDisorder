@@ -421,3 +421,5 @@ See LICENSE file for details.
 **Version**: 1.0.0
 **Unity Version**: Unity 6 (2023.x+)
 **Last Updated**: October 2025
+
+**Project Subdirectory**: unity
