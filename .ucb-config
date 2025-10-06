@@ -1,0 +1,14 @@
+# Unity Cloud Build Configuration
+# This file tells Unity Cloud Build where to find the project
+
+# Project root directory containing Assets and ProjectSettings
+UNITY_PROJECT_PATH=unity
+
+# Build target
+BUILD_TARGET=WebGL
+
+# Unity version (adjust to match your project)
+UNITY_VERSION=2023.2
+
+# Additional settings
+ENABLE_CACHE=true
