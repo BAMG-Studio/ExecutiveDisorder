@@ -9,11 +9,15 @@
 - **Shell Script**: Automation scripts
 
 ## Game Engine
-- **Unity 6000.0.41f1**: Primary game engine
+- **Unity 6.2**: Primary game engine with AI/ML capabilities
   - Universal Render Pipeline (URP)
   - TextMesh Pro for text rendering
   - Input System (new input system)
   - WebGL build support
+  - Unity Sentis for neural network inference
+  - ML-Agents for reinforcement learning
+  - Unity Muse for AI-assisted content generation
+  - Addressables for dynamic asset management
 
 ## Build Systems
 - **MSBuild**: C# project compilation via .NET SDK
@@ -33,6 +37,10 @@
 - TextMesh Pro
 - Input System
 - Unity Collaborate Proxy
+- Unity Sentis (AI inference engine)
+- ML-Agents (reinforcement learning)
+- Addressables (dynamic asset loading)
+- Unity Muse (AI content generation)
 
 ### Backend
 - Flask (Python web framework)

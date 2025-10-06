@@ -12,6 +12,9 @@ ExecutiveDisorder is a decision-based card game built with Unity where players m
 - **Save/Load System**: Persistent game state management for continuing gameplay sessions
 - **Cross-Platform Support**: Unity-based architecture supporting WebGL, desktop, and mobile platforms
 - **Audio Management**: Integrated sound effects and music system for immersive gameplay
+- **AI-Powered Content Generation**: Unity Muse and Sentis for automated content creation with minimal human intervention
+- **ML-Driven Player Simulation**: ML-Agents for training AI agents to test gameplay balance and difficulty
+- **End-to-End AI Workflow**: Agentic AI systems handle complex Unity engine tasks autonomously
 
 ## Target Users
 - Players interested in narrative-driven decision games

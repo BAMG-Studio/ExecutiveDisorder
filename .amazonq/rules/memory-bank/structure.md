@@ -22,18 +22,20 @@
   - Test coverage for core systems
 
 ### Unity Project
-- **unity/**: Unity 6000.0.41f1 project
+- **unity/**: Unity 6.2 project with AI/ML integration
   - `Assets/Scripts/`: Unity-specific game scripts
     - `Managers/`: AudioManager, GameManager, etc.
     - `StateManager/`: Unity state management integration
     - `UI/`: User interface controllers
     - `Cards/`, `Characters/`, `Resources/`: Unity component wrappers
+    - `AI/`: AI/ML systems (AIContentGenerator, SentisInferenceManager, PlayerSimulationAgent, AIAssetManager)
   - `Assets/Scenes/`: Game scenes
   - `Assets/Prefabs/`: Reusable game objects
   - `Assets/Art/`: Visual assets
   - `Assets/Audio/`: Sound effects and music
   - `Assets/Data/`: JSON data files (cards, characters, endings)
   - `ProjectSettings/`: Unity configuration
+  - `ML-Agents/`: Machine learning training configurations and scripts
 
 ### Infrastructure
 - **backend/**: Python Flask backend service
