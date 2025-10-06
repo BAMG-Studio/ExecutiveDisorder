@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExecutiveDisorder.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+756c145456474613b4b3f8d095e280e2b5fdd13e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc88243d61237cecc9ce778892bf6f99c012a873")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExecutiveDisorder.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExecutiveDisorder.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

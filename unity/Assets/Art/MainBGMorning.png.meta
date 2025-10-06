@@ -153,4 +153,7 @@ TextureImporter:
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
-  assetBundleVariant: 
+  assetBundleVariant:
+UnityEditor.PackageManager.PackageManagerWindow: Refresh
+Window → Package Manager → Add package from git URL
+→ com.unity.ml-agents

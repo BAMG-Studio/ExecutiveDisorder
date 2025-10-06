@@ -1,0 +1,38 @@
+# ML-Agents Python Requirements
+# For Executive Disorder Unity Project
+# Python 3.9 - 3.10 recommended
+
+# Core ML-Agents
+mlagents==1.0.0
+mlagents-envs==1.0.0
+
+# PyTorch (CPU version - for GPU, see documentation)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# TensorBoard for monitoring
+tensorboard>=2.13.0
+
+# Core dependencies
+numpy>=1.21.0,<2.0.0
+protobuf>=3.20.3,<4.0.0
+grpcio>=1.48.2
+pyyaml>=6.0
+
+# Optional but recommended
+Pillow>=9.3.0
+h5py>=3.7.0
+filelock>=3.8.0
+cloudpickle>=2.2.0
+
+# ONNX export (for Sentis integration)
+onnx>=1.13.0
+onnxruntime>=1.14.0
+
+# Gym environment
+gym>=0.26.0
+
+# Additional utilities
+cattrs>=22.2.0
+pettingzoo>=1.22.0

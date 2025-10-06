@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj": {}
+    "c:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj": {
+    "c:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj",
+        "projectUniqueName": "c:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj",
         "projectName": "ExecutiveDisorder.Core",
-        "projectPath": "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj",
+        "projectPath": "c:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\ExecutiveDisorder.Core.csproj",
         "packagesPath": "C:\\Users\\POK28\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\obj\\",
+        "outputPath": "c:\\Users\\POK28\\source\\repos\\ExecutiveDisorderReplit\\ExecutiveDisorder.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
