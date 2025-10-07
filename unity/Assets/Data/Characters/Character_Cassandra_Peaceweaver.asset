@@ -11,15 +11,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bdfa0338d282114086100806de65f7a, type: 3}
   m_Name: Character_Cassandra_Peaceweaver
-  m_EditorClassIdentifier: 
-  CharacterName: Madam Cash
+  m_EditorClassIdentifier: Assembly-CSharp::Character
+  CharacterName: Cassandra Peaceweaver
   GovernTitle: Minister of Soft Power
   PartyAffiliation: The Velvet Alliance
-  Portrait: {fileID: 5811045442005891315, guid: c78abc023a4f1684481ea984bf840df5, type: 3}
-  FullBody: {fileID: -1479057591747025956, guid: eb2b4fb41efb16e4aa6eb69e59dc3fbf, type: 3}
-  ProfilePicture: {fileID: 5811045442005891315, guid: c78abc023a4f1684481ea984bf840df5, type: 3}
+  Portrait: {fileID: 0}
+  FullBody: {fileID: 0}
+  ProfilePicture: {fileID: 0}
   CampaignSlogan: Negotiation is our strongest weapon.
-  CharacterEffect: {fileID: 11400000, guid: 2104ef41d4de75048a91bd14d02dd918, type: 2}
+  CharacterEffect: {fileID: 0}
   InitialPopularity: 55
   InitialStability: 60
   InitialMedia: 60

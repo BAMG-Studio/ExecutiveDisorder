@@ -10,6 +10,22 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+# Unity project nested under `unity/`
+unity/[Ll]ibrary/
+unity/[Tt]emp/
+unity/[Ll]ogs/
+unity/[Uu]ser[Ss]ettings/
+unity/[Bb]uild/
+unity/[Bb]uilds/
+unity/WebGLBuild/
+unity/GeneratedAssets/
+unity/[Oo]bj/
+unity/[Bb]in/
+unity/Logs/
+
+# Ignore any accidental WebGL build artifacts placed in Resources
+unity/Assets/Resources/WebGLBuild.*
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

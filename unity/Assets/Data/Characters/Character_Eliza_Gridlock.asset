@@ -11,15 +11,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bdfa0338d282114086100806de65f7a, type: 3}
   m_Name: Character_Eliza_Gridlock
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character
   CharacterName: Eliza Gridlock
   GovernTitle: Chief Algorithm Officer
   PartyAffiliation: The Data Stream
-  Portrait: {fileID: 4551370062605232313, guid: 268a589c9ea4cc8419cc0c5e27e03bb6, type: 3}
-  FullBody: {fileID: 7865372496436097553, guid: 45730dfaf45dc3a4aab27abc9a519952, type: 3}
+  Portrait: {fileID: 0}
+  FullBody: {fileID: 0}
   ProfilePicture: {fileID: 0}
   CampaignSlogan: Run the country like a spreadsheet.
-  CharacterEffect: {fileID: 11400000, guid: 2104ef41d4de75048a91bd14d02dd918, type: 2}
+  CharacterEffect: {fileID: 0}
   InitialPopularity: 45
   InitialStability: 65
   InitialMedia: 40
