@@ -1,0 +1,21 @@
+id: card_nationalize_oxygen_underwater
+name: Nationalize Oxygen Underwater
+description: A decree to nationalize oxygen underwater.
+cost: 0
+rarity: uncommon
+tags:
+- absurd
+- crisis_management
+- panic
+effects:
+- type: EconomyDelta
+  value: -7
+synergies:
+- withTag: absurd
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize oxygen underwater. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, nationalize oxygen underwater!

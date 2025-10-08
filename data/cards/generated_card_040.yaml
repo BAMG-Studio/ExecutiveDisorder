@@ -1,0 +1,23 @@
+id: card_gamify_inflation_underwater
+name: Gamify Inflation Underwater
+description: A decree to gamify inflation underwater.
+cost: 4
+rarity: common
+tags:
+- media
+- panic
+- policy
+effects:
+- type: AbsurdityDelta
+  value: 9
+- type: PanicDelta
+  value: 6
+- type: ReputationDelta
+  value: -5
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where gamify inflation underwater. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, gamify inflation underwater!

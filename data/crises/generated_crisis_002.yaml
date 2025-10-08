@@ -1,0 +1,34 @@
+id: crisis_002_meme
+name: Meme Saga
+type: major
+category: economic
+headline: Meme Walkout Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 12
+  statThresholds:
+    absurdity:
+      min: 66
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: AbsurdityDelta
+    value: -9
+  - type: ReputationDelta
+    value: -9
+  - type: EconomyDelta
+    value: -8
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 8
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_003_bureaucrat
+  delay: 1
+newsImage: crisis/crisis_002_meme
+imagePrompt: dramatic_news_photo photo capturing meme walkout rocks nation, dramatic
+  lighting, satirical satire.

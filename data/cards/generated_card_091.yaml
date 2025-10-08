@@ -1,0 +1,21 @@
+id: card_privatize_bureaucracy_underwater
+name: Privatize Bureaucracy Underwater
+description: A decree to privatize bureaucracy underwater.
+cost: 4
+rarity: common
+tags:
+- absurd_political_decisions
+- faction_dynamics
+- panic
+effects:
+- type: ApprovalDelta
+  value: 7
+- type: ReputationDelta
+  value: 2
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize bureaucracy underwater. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, privatize bureaucracy underwater!

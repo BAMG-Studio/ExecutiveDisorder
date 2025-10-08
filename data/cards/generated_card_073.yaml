@@ -1,0 +1,21 @@
+id: card_privatize_memes_forever
+name: Privatize Memes Forever
+description: A decree to privatize memes forever.
+cost: 4
+rarity: common
+tags:
+- faction_dynamics
+- media
+- panic
+effects:
+- type: AbsurdityDelta
+  value: 7
+- type: EconomyDelta
+  value: -7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize memes forever. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, privatize memes forever!

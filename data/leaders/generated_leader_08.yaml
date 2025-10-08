@@ -1,0 +1,36 @@
+id: leader_08_spin
+name: Provisional Director Spin
+title: Iron Bureaucrat
+archetype: absurd_political_decisions
+baseStats:
+  approval: 46
+  economy: 33
+  absurdity: 48
+  reputation: 38
+  panic: 41
+traitTags:
+- order
+- economy
+- absurd_political_decisions
+ability:
+  name: Iron Bureaucrat Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: PanicDelta
+    value: 8
+  - type: AbsurdityDelta
+    value: 4
+startingDeck:
+- card_tax_pigeons_for_clout
+- card_celebrate_bureaucracy_on_tuesdays
+- card_mandate_conspiracies_on_tuesdays
+- card_crowdsource_birds_via_polls
+- card_streamline_pigeons_for_clout
+- card_gamify_oxygen_for_votes
+- card_mandate_reality_forever
+- card_crowdsource_dance_battles_for_clout
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Provisional Director Spin, embodying
+  iron bureaucrat vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_08_spin_theme

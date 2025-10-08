@@ -1,0 +1,21 @@
+id: card_outlaw_bureaucracy_for_charity
+name: Outlaw Bureaucracy for Charity
+description: A decree to outlaw bureaucracy for charity.
+cost: 2
+rarity: common
+tags:
+- crisis_management
+- media
+- media_manipulation
+effects:
+- type: EconomyDelta
+  value: 4
+synergies:
+- withTag: media
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw bureaucracy for charity. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, outlaw bureaucracy for charity!

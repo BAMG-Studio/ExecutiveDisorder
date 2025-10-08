@@ -1,0 +1,22 @@
+id: faction_03_shadow
+name: Shadow Lobbies
+type: influence_group
+baseInfluence: 54
+volatility: 7
+mechanics:
+  reactions:
+  - cardTag: media_manipulation
+    influenceDelta: 11
+  influenceEffects:
+  - threshold: 74
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.19
+unlockableCards:
+- card_privatize_hands_with_jazz
+- card_mandate_memes_for_charity
+- card_outlaw_bureaucracy_via_polls
+- card_gamify_inflation_underwater
+- card_streamline_hands_for_charity
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Shadow Lobbies, colors #0f3460, satire level high.'

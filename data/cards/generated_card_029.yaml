@@ -1,0 +1,23 @@
+id: card_outlaw_reality_for_votes
+name: Outlaw Reality for Votes
+description: A decree to outlaw reality for votes.
+cost: 3
+rarity: common
+tags:
+- media
+- panic
+- policy
+effects:
+- type: PanicDelta
+  value: -9
+- type: ReputationDelta
+  value: 9
+synergies:
+- withTag: media
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw reality for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, outlaw reality for votes!

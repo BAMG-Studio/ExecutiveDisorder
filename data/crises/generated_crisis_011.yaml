@@ -1,0 +1,30 @@
+id: crisis_011_algorithm
+name: Algorithm Saga
+type: minor
+category: political
+headline: Algorithm Inquest Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 13
+  statThresholds:
+    absurdity:
+      min: 46
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ApprovalDelta
+    value: -6
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 5
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_012_comedian
+  delay: 1
+newsImage: crisis/crisis_011_algorithm
+imagePrompt: dramatic_news_photo photo capturing algorithm inquest rocks nation, dramatic
+  lighting, satirical satire.

@@ -1,0 +1,36 @@
+id: leader_06_ledger
+name: Virtual Chancellor Ledger
+title: Budget Overlord
+archetype: absurd_political_decisions
+baseStats:
+  approval: 39
+  economy: 53
+  absurdity: 77
+  reputation: 55
+  panic: 16
+traitTags:
+- economy
+- math
+- absurd_political_decisions
+ability:
+  name: Budget Overlord Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: AbsurdityDelta
+    value: 4
+  - type: AbsurdityDelta
+    value: 4
+startingDeck:
+- card_celebrate_inflation_for_charity
+- card_tax_inflation_for_votes
+- card_mandate_pigeons_underwater
+- card_nationalize_reality_on_tuesdays
+- card_ban_oxygen_via_polls
+- card_nationalize_reality_for_votes
+- card_ban_oxygen_for_clout
+- card_nationalize_inflation_via_polls
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Virtual Chancellor Ledger, embodying
+  budget overlord vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_06_ledger_theme

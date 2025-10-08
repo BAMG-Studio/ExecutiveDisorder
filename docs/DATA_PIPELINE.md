@@ -7,13 +7,17 @@ The data pipeline transforms YAML content definitions into Unity assets through 
 ## 🏗️ Architecture
 
 ```
-theme.json → gen_content.py → YAML files → gen_images.py/gen_audio.py → Unity Assets
-                                                    ↓
-                                             Unity Importer
-                                                    ↓
-                                            ScriptableObjects
-                                                    ↓
-                                            Addressables Build
+theme.json ──▶ gen_content.py ──▶ YAML (data/)
+        │               │
+        │               └──▶ JSON aggregates (unity/Assets/Game/Data/)
+        │                                   │
+        └───────────────────────────────────┘
+                                            ▼
+                                 CodexDataImporter (Unity)
+                                            ▼
+                                ScriptableObjects + GameDatabase
+                                            ▼
+                            Addressables (auto-labeled when available)
 ```
 
 ## 📁 Directory Structure
@@ -135,7 +139,9 @@ iconPrompt: "Icon generation prompt"
 python3 tools/gen_content.py theme.json
 ```
 
-Creates YAML files in `data/` based on `theme.json` configuration.
+Creates YAML files in `data/` based on `theme.json` configuration **and** JSON
+aggregations under `unity/Assets/Game/Data/` for the Unity importer. Use
+`--seed` to reproduce deterministic batches.
 
 ### 2. Generate Assets
 
@@ -151,11 +157,14 @@ python3 tools/gen_audio.py
 
 ### 3. Unity Import
 
-Open Unity → Assets → Import Content Data (menu item)
+Open Unity → `Codex/Data/Import All`
 
 Or via CLI:
 ```bash
-unity-editor -executeMethod ContentImporter.ImportAll -quit
+"/path/to/Unity" -batchmode -nographics \
+  -projectPath unity \
+  -executeMethod CodexDataImporter.ImportAll \
+  -quit -logFile -
 ```
 
 ### 4. Build
@@ -250,7 +259,7 @@ bash scripts/codex-workflow.sh
 Steps:
 1. Generate content (Python)
 2. Generate assets (Python)
-3. Import to Unity
+3. Import to Unity (auto-run during build)
 4. Build WebGL
 5. Commit & push
 
@@ -338,18 +347,43 @@ unity-editor -executeMethod ContentImporter.ImportCards
 - Use `mock` mode for testing
 
 ### Unity import fails?
-- Validate YAML schema
-- Check Unity console for errors
-- Ensure `Data/` folder exists
+- Validate YAML/JSON schema via `dotnet run --project ExecutiveDisorder.Game`
+- Check Unity console for exceptions
+- Ensure `unity/Assets/Game/Data/*.json` files exist (run `scripts/gen-content.sh`)
+
+## 🧱 Scene Scaffolding & Gameplay Stub
+
+- `unity/Assets/Editor/SceneScaffolder.cs` provisions three scenes:
+  - `Boot.unity` (loads `GameDatabase` from `Resources/Generated`).
+  - `MainMenu.unity` (UGUI leader selection, card grid, start/quit buttons).
+  - `Gameplay.unity` (minimal turn runner to sanity-check data effects).
+- Generate or refresh scenes and Build Settings via:
+
+  ```bash
+  bash scripts/codex-init.sh
+  ```
+
+- Scenes are added to Build Settings automatically (Boot → MainMenu → Gameplay).
+
+## 🧪 CLI Validation Harness
+
+- `ExecutiveDisorder.Game/Program.cs` validates the JSON aggregates before Unity
+  runs. Execute:
+
+  ```bash
+  dotnet run --project ExecutiveDisorder.Game
+  ```
+
+- Checks for duplicate IDs, missing card references, and prints content counts.
 
 ## 🎯 Next Steps
 
 1. ✅ Schema defined
-2. ✅ Example YAML created
-3. ✅ Generators created (mock mode)
-4. ⏳ Unity importer script
-5. ⏳ Real provider integration
-6. ⏳ CI/CD automation
+2. ✅ Theme-driven generators (mock mode)
+3. ✅ Unity importer + Addressables labeling
+4. ✅ Scene scaffolding + gameplay smoke test
+5. ⏳ Hook real image/audio providers
+6. ⏳ CI/CD automation (GitHub Actions)
 
 ---
 

@@ -1,0 +1,23 @@
+id: card_nationalize_bureaucracy_for_votes
+name: Nationalize Bureaucracy for Votes
+description: A decree to nationalize bureaucracy for votes.
+cost: 3
+rarity: legendary
+tags:
+- absurd
+- media
+- media_manipulation
+effects:
+- type: PanicDelta
+  value: -5
+- type: AbsurdityDelta
+  value: -2
+- type: ReputationDelta
+  value: -6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize bureaucracy for votes. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, nationalize bureaucracy for votes!

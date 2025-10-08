@@ -1,0 +1,30 @@
+id: crisis_026_algorithm
+name: Algorithm Meltdown
+type: minor
+category: political
+headline: Algorithm Takeover Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 13
+  statThresholds:
+    absurdity:
+      min: 51
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ApprovalDelta
+    value: -6
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 8
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_027_inflation
+  delay: 1
+newsImage: crisis/crisis_026_algorithm
+imagePrompt: dramatic_news_photo photo capturing algorithm takeover rocks nation,
+  dramatic lighting, satirical satire.

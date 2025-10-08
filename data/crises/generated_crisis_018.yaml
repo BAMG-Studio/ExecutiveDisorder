@@ -1,0 +1,32 @@
+id: crisis_018_diplomat
+name: Diplomat Crisis
+type: major
+category: social
+headline: Diplomat Flash Mob Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 10
+  statThresholds:
+    absurdity:
+      min: 49
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ApprovalDelta
+    value: 3
+  - type: AbsurdityDelta
+    value: 7
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 7
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_019_pigeon
+  delay: 1
+newsImage: crisis/crisis_018_diplomat
+imagePrompt: dramatic_news_photo photo capturing diplomat flash mob rocks nation,
+  dramatic lighting, satirical satire.

@@ -1,0 +1,23 @@
+id: card_nationalize_reality_for_votes
+name: Nationalize Reality for Votes
+description: A decree to nationalize reality for votes.
+cost: 4
+rarity: common
+tags:
+- absurd_political_decisions
+- media_manipulation
+- policy
+effects:
+- type: ApprovalDelta
+  value: 4
+- type: PanicDelta
+  value: 9
+- type: ReputationDelta
+  value: 5
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize reality for votes. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, nationalize reality for votes!

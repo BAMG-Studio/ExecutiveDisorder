@@ -1,0 +1,23 @@
+id: card_crowdsource_inflation_at_scale
+name: Crowdsource Inflation at Scale
+description: A decree to crowdsource inflation at scale.
+cost: 3
+rarity: common
+tags:
+- absurd_political_decisions
+- panic
+- policy
+effects:
+- type: PanicDelta
+  value: 4
+- type: EconomyDelta
+  value: -8
+- type: AbsurdityDelta
+  value: -7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource inflation at scale. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, crowdsource inflation at scale!

@@ -1,0 +1,22 @@
+id: card_ban_memes_at_scale
+name: Ban Memes at Scale
+description: A decree to ban memes at scale.
+cost: 4
+rarity: common
+tags:
+- absurd
+- media
+- media_manipulation
+effects:
+- type: ReputationDelta
+  value: 6
+- type: EconomyDelta
+  value: -5
+synergies:
+- withTag: absurd
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban memes at scale. highlight chaotic bureaucracy,
+  viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560, #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, ban memes at scale!

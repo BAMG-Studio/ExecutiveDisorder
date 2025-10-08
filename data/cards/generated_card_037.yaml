@@ -1,0 +1,21 @@
+id: card_tax_pigeons_for_clout
+name: Tax Pigeons for Clout
+description: A decree to tax pigeons for clout.
+cost: 2
+rarity: uncommon
+tags:
+- economy
+- faction_dynamics
+- panic
+effects:
+- type: PanicDelta
+  value: -7
+- type: AbsurdityDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax pigeons for clout. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, tax pigeons for clout!

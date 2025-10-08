@@ -1,0 +1,23 @@
+id: card_tax_conspiracies_at_scale
+name: Tax Conspiracies at Scale
+description: A decree to tax conspiracies at scale.
+cost: 4
+rarity: uncommon
+tags:
+- economy
+- media
+- policy
+effects:
+- type: AbsurdityDelta
+  value: 3
+- type: EconomyDelta
+  value: 9
+- type: ReputationDelta
+  value: -6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax conspiracies at scale. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, tax conspiracies at scale!

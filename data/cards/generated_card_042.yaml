@@ -1,0 +1,19 @@
+id: card_ban_birds_for_charity
+name: Ban Birds for Charity
+description: A decree to ban birds for charity.
+cost: 1
+rarity: common
+tags:
+- economy
+- media
+- media_manipulation
+effects:
+- type: PanicDelta
+  value: 6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban birds for charity. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, ban birds for charity!

@@ -1,29 +1,572 @@
 {
   "crises": [
     {
-      "id": "pigeon_uprising",
-      "name": "Pigeon Uprising",
-      "description": "City squares overrun by organized pigeons. Feathers everywhere.",
+      "id": "crisis_001_meme",
+      "name": "Meme Crisis",
+      "description": "Meme Summit Rocks Nation",
       "severity": 2,
-      "tags": ["nature", "absurd"],
-      "effects": [
-        {"type": "ApprovalDelta", "value": -2},
-        {"type": "PanicDelta", "value": 3}
+      "tags": [
+        "political",
+        "absurd_political_decisions"
       ],
-      "next": ["supply_seed_shortage"]
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_002_meme"
+      ]
     },
     {
-      "id": "supply_seed_shortage",
-      "name": "Seed Supply Shortage",
-      "description": "Sunflower seed prices spike; pigeons negotiate.",
+      "id": "crisis_002_meme",
+      "name": "Meme Saga",
+      "description": "Meme Walkout Rocks Nation",
       "severity": 3,
-      "tags": ["economy"],
+      "tags": [
+        "economic",
+        "absurd_political_decisions"
+      ],
       "effects": [
-        {"type": "EconomyDelta", "value": -3},
-        {"type": "ReputationDelta", "value": -1}
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_003_bureaucrat"
+      ]
+    },
+    {
+      "id": "crisis_003_bureaucrat",
+      "name": "Bureaucrat Saga",
+      "description": "Bureaucrat Summit Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "social",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 5
+        }
+      ],
+      "next": [
+        "crisis_004_meme"
+      ]
+    },
+    {
+      "id": "crisis_004_meme",
+      "name": "Meme Saga",
+      "description": "Meme Flash Mob Rocks Nation",
+      "severity": 5,
+      "tags": [
+        "international",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 5
+        }
+      ],
+      "next": [
+        "crisis_005_inflation"
+      ]
+    },
+    {
+      "id": "crisis_005_inflation",
+      "name": "Inflation Spectacle",
+      "description": "Inflation Flash Mob Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "media",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_006_diplomat"
+      ]
+    },
+    {
+      "id": "crisis_006_diplomat",
+      "name": "Diplomat Meltdown",
+      "description": "Diplomat Walkout Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "political",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 6
+        }
+      ],
+      "next": [
+        "crisis_007_meme"
+      ]
+    },
+    {
+      "id": "crisis_007_meme",
+      "name": "Meme Crisis",
+      "description": "Meme Summit Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "economic",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_008_comedian"
+      ]
+    },
+    {
+      "id": "crisis_008_comedian",
+      "name": "Comedian Crisis",
+      "description": "Comedian Flash Mob Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "social",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_009_comedian"
+      ]
+    },
+    {
+      "id": "crisis_009_comedian",
+      "name": "Comedian Crisis",
+      "description": "Comedian Inquest Rocks Nation",
+      "severity": 5,
+      "tags": [
+        "international",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_010_meme"
+      ]
+    },
+    {
+      "id": "crisis_010_meme",
+      "name": "Meme Saga",
+      "description": "Meme Flash Mob Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "media",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        }
+      ],
+      "next": [
+        "crisis_011_algorithm"
+      ]
+    },
+    {
+      "id": "crisis_011_algorithm",
+      "name": "Algorithm Saga",
+      "description": "Algorithm Inquest Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "political",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_012_comedian"
+      ]
+    },
+    {
+      "id": "crisis_012_comedian",
+      "name": "Comedian Saga",
+      "description": "Comedian Takeover Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "economic",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_013_bureaucrat"
+      ]
+    },
+    {
+      "id": "crisis_013_bureaucrat",
+      "name": "Bureaucrat Crisis",
+      "description": "Bureaucrat Summit Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "social",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_014_lobbyist"
+      ]
+    },
+    {
+      "id": "crisis_014_lobbyist",
+      "name": "Lobbyist Saga",
+      "description": "Lobbyist Takeover Rocks Nation",
+      "severity": 5,
+      "tags": [
+        "international",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_015_algorithm"
+      ]
+    },
+    {
+      "id": "crisis_015_algorithm",
+      "name": "Algorithm Crisis",
+      "description": "Algorithm Inquest Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "media",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_016_inflation"
+      ]
+    },
+    {
+      "id": "crisis_016_inflation",
+      "name": "Inflation Crisis",
+      "description": "Inflation Walkout Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "political",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 6
+        }
+      ],
+      "next": [
+        "crisis_017_meme"
+      ]
+    },
+    {
+      "id": "crisis_017_meme",
+      "name": "Meme Crisis",
+      "description": "Meme Flash Mob Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "economic",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        }
+      ],
+      "next": [
+        "crisis_018_diplomat"
+      ]
+    },
+    {
+      "id": "crisis_018_diplomat",
+      "name": "Diplomat Crisis",
+      "description": "Diplomat Flash Mob Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "social",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_019_pigeon"
+      ]
+    },
+    {
+      "id": "crisis_019_pigeon",
+      "name": "Pigeon Crisis",
+      "description": "Pigeon Riots Rocks Nation",
+      "severity": 5,
+      "tags": [
+        "international",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        }
+      ],
+      "next": [
+        "crisis_020_pigeon"
+      ]
+    },
+    {
+      "id": "crisis_020_pigeon",
+      "name": "Pigeon Saga",
+      "description": "Pigeon Summit Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "media",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_021_lobbyist"
+      ]
+    },
+    {
+      "id": "crisis_021_lobbyist",
+      "name": "Lobbyist Spectacle",
+      "description": "Lobbyist Takeover Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "political",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 6
+        }
+      ],
+      "next": [
+        "crisis_022_algorithm"
+      ]
+    },
+    {
+      "id": "crisis_022_algorithm",
+      "name": "Algorithm Crisis",
+      "description": "Algorithm Walkout Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "economic",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_023_hashtag"
+      ]
+    },
+    {
+      "id": "crisis_023_hashtag",
+      "name": "Hashtag Saga",
+      "description": "Hashtag Riots Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "social",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_024_diplomat"
+      ]
+    },
+    {
+      "id": "crisis_024_diplomat",
+      "name": "Diplomat Meltdown",
+      "description": "Diplomat Summit Rocks Nation",
+      "severity": 5,
+      "tags": [
+        "international",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        }
+      ],
+      "next": [
+        "crisis_025_hashtag"
+      ]
+    },
+    {
+      "id": "crisis_025_hashtag",
+      "name": "Hashtag Meltdown",
+      "description": "Hashtag Summit Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "media",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 6
+        }
+      ],
+      "next": [
+        "crisis_026_algorithm"
+      ]
+    },
+    {
+      "id": "crisis_026_algorithm",
+      "name": "Algorithm Meltdown",
+      "description": "Algorithm Takeover Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "political",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_027_inflation"
+      ]
+    },
+    {
+      "id": "crisis_027_inflation",
+      "name": "Inflation Spectacle",
+      "description": "Inflation Riots Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "economic",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "next": [
+        "crisis_028_bureaucrat"
+      ]
+    },
+    {
+      "id": "crisis_028_bureaucrat",
+      "name": "Bureaucrat Meltdown",
+      "description": "Bureaucrat Flash Mob Rocks Nation",
+      "severity": 3,
+      "tags": [
+        "social",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        }
+      ],
+      "next": [
+        "crisis_029_inflation"
+      ]
+    },
+    {
+      "id": "crisis_029_inflation",
+      "name": "Inflation Spectacle",
+      "description": "Inflation Walkout Rocks Nation",
+      "severity": 5,
+      "tags": [
+        "international",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "next": [
+        "crisis_030_comedian"
+      ]
+    },
+    {
+      "id": "crisis_030_comedian",
+      "name": "Comedian Crisis",
+      "description": "Comedian Inquest Rocks Nation",
+      "severity": 2,
+      "tags": [
+        "media",
+        "absurd_political_decisions"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
       ],
       "next": []
     }
   ]
 }
-

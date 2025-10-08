@@ -1,0 +1,25 @@
+id: card_outlaw_pigeons_with_jazz
+name: Outlaw Pigeons with Jazz
+description: A decree to outlaw pigeons with jazz.
+cost: 3
+rarity: uncommon
+tags:
+- crisis_management
+- economy
+- panic
+effects:
+- type: ReputationDelta
+  value: -2
+- type: AbsurdityDelta
+  value: -5
+- type: PanicDelta
+  value: -6
+synergies:
+- withTag: crisis_management
+  bonusAbsurdity: 1
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw pigeons with jazz. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, outlaw pigeons with jazz!

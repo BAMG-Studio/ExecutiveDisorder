@@ -1,0 +1,21 @@
+id: card_mandate_reality_on_tuesdays
+name: Mandate Reality on Tuesdays
+description: A decree to mandate reality on tuesdays.
+cost: 1
+rarity: uncommon
+tags:
+- absurd_political_decisions
+- crisis_management
+- media_manipulation
+effects:
+- type: ApprovalDelta
+  value: -4
+- type: AbsurdityDelta
+  value: 6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate reality on tuesdays. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, mandate reality on tuesdays!

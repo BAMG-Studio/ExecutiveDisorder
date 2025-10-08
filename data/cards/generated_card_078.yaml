@@ -1,0 +1,23 @@
+id: card_mandate_dance_battles_for_clout
+name: Mandate Dance Battles for Clout
+description: A decree to mandate dance battles for clout.
+cost: 0
+rarity: common
+tags:
+- faction_dynamics
+- media
+- panic
+effects:
+- type: AbsurdityDelta
+  value: -5
+- type: EconomyDelta
+  value: 4
+synergies:
+- withTag: panic
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate dance battles for clout. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, mandate dance battles for clout!

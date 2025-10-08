@@ -1,0 +1,22 @@
+id: faction_01_deep
+name: Deep Bureaucracy
+type: influence_group
+baseInfluence: 51
+volatility: 6
+mechanics:
+  reactions:
+  - cardTag: panic
+    influenceDelta: 6
+  influenceEffects:
+  - threshold: 61
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.26
+unlockableCards:
+- card_privatize_reality_forever
+- card_celebrate_inflation_on_tuesdays
+- card_tax_inflation_forever
+- card_celebrate_bureaucracy_on_tuesdays
+- card_outlaw_birds_for_votes
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Deep Bureaucracy, colors #1a1a2e, satire level high.'

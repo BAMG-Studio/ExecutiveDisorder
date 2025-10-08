@@ -1,0 +1,36 @@
+id: leader_04_magnifico
+name: Supreme Consultant Magnifico
+title: Meme Monarch
+archetype: absurd_political_decisions
+baseStats:
+  approval: 37
+  economy: 32
+  absurdity: 86
+  reputation: 69
+  panic: 46
+traitTags:
+- memes
+- absurd
+- absurd_political_decisions
+ability:
+  name: Meme Monarch Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: AbsurdityDelta
+    value: 8
+  - type: AbsurdityDelta
+    value: 2
+startingDeck:
+- card_nationalize_oxygen_underwater
+- card_tax_inflation_forever
+- card_privatize_conspiracies_for_votes
+- card_gamify_conspiracies_at_scale
+- card_outlaw_bureaucracy_for_clout
+- card_crowdsource_hands_at_scale
+- card_ban_dance_battles_with_jazz
+- card_nationalize_inflation_with_jazz
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Supreme Consultant Magnifico, embodying
+  meme monarch vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_04_magnifico_theme

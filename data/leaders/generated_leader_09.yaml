@@ -1,0 +1,36 @@
+id: leader_09_ledger
+name: Supreme Highlord Ledger
+title: Meme Monarch
+archetype: absurd_political_decisions
+baseStats:
+  approval: 47
+  economy: 33
+  absurdity: 81
+  reputation: 55
+  panic: 22
+traitTags:
+- memes
+- absurd
+- absurd_political_decisions
+ability:
+  name: Meme Monarch Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: AbsurdityDelta
+    value: 7
+  - type: AbsurdityDelta
+    value: 3
+startingDeck:
+- card_privatize_reality_with_jazz
+- card_nationalize_birds_with_jazz
+- card_privatize_reality_forever
+- card_mandate_pigeons_underwater
+- card_ban_memes_at_scale
+- card_outlaw_birds_for_charity
+- card_privatize_inflation_with_jazz
+- card_gamify_conspiracies_at_scale
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Supreme Highlord Ledger, embodying
+  meme monarch vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_09_ledger_theme

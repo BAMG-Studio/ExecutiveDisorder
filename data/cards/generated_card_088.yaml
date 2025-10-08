@@ -1,0 +1,23 @@
+id: card_crowdsource_oxygen_with_jazz
+name: Crowdsource Oxygen with Jazz
+description: A decree to crowdsource oxygen with jazz.
+cost: 2
+rarity: uncommon
+tags:
+- absurd_political_decisions
+- media
+- panic
+effects:
+- type: PanicDelta
+  value: 5
+- type: AbsurdityDelta
+  value: 3
+synergies:
+- withTag: media
+  bonusAbsurdity: 1
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource oxygen with jazz. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, crowdsource oxygen with jazz!

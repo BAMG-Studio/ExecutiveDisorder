@@ -1,0 +1,23 @@
+id: card_ban_oxygen_for_clout
+name: Ban Oxygen for Clout
+description: A decree to ban oxygen for clout.
+cost: 3
+rarity: uncommon
+tags:
+- faction_dynamics
+- media
+- media_manipulation
+effects:
+- type: ReputationDelta
+  value: -2
+- type: AbsurdityDelta
+  value: 6
+- type: PanicDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban oxygen for clout. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, ban oxygen for clout!

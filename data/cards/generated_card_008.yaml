@@ -1,0 +1,25 @@
+id: card_ban_hands_for_charity
+name: Ban Hands for Charity
+description: A decree to ban hands for charity.
+cost: 4
+rarity: uncommon
+tags:
+- absurd
+- media
+- media_manipulation
+effects:
+- type: PanicDelta
+  value: -7
+- type: EconomyDelta
+  value: 2
+- type: ApprovalDelta
+  value: -9
+synergies:
+- withTag: media
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban hands for charity. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, ban hands for charity!

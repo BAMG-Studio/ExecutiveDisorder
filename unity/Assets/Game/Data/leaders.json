@@ -1,21 +1,214 @@
 {
   "leaders": [
     {
-      "id": "corrupt_executive",
-      "name": "The Corrupt Executive",
-      "bio": "A smile wider than the deficit. Loves shortcuts and golden pens.",
-      "traitTags": ["greed", "spin"],
-      "startingDeck": ["ban_birds", "oxygen_tax"],
-      "portraitKey": "art/portraits/corrupt_executive"
+      "id": "leader_01_hyperion",
+      "name": "Provisional Highlord Hyperion",
+      "bio": "Provisional Highlord Hyperion \u2014 Chaos Conductor of absurd political decisions.",
+      "traitTags": [
+        "chaos",
+        "panic",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_ban_pigeons_at_scale",
+        "card_outlaw_reality_for_charity",
+        "card_nationalize_birds_underwater",
+        "card_outlaw_birds_for_charity",
+        "card_outlaw_bureaucracy_for_clout",
+        "card_tax_pigeons_for_charity",
+        "card_streamline_pigeons_for_charity",
+        "card_nationalize_oxygen_underwater"
+      ],
+      "portraitKey": "art/portraits/leader_01_hyperion"
     },
     {
-      "id": "meme_politician",
-      "name": "The Meme Politician",
-      "bio": "Speaks only in reaction images and viral catchphrases.",
-      "traitTags": ["memes", "charisma"],
-      "startingDeck": ["dance_vote", "ban_birds"],
-      "portraitKey": "art/portraits/meme_politician"
+      "id": "leader_02_quorum",
+      "name": "Supreme Highlord Quorum",
+      "bio": "Supreme Highlord Quorum \u2014 Crisis Broker of absurd political decisions.",
+      "traitTags": [
+        "crisis",
+        "diplomacy",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_privatize_bureaucracy_underwater",
+        "card_outlaw_reality_for_votes",
+        "card_ban_pigeons_at_scale",
+        "card_privatize_conspiracies_at_scale",
+        "card_tax_pigeons_for_clout",
+        "card_outlaw_reality_on_tuesdays",
+        "card_gamify_pigeons_underwater",
+        "card_celebrate_inflation_on_tuesdays"
+      ],
+      "portraitKey": "art/portraits/leader_02_quorum"
+    },
+    {
+      "id": "leader_03_memetrix",
+      "name": "Grand Consultant Memetrix",
+      "bio": "Grand Consultant Memetrix \u2014 Budget Overlord of absurd political decisions.",
+      "traitTags": [
+        "economy",
+        "math",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_tax_pigeons_for_charity",
+        "card_outlaw_hands_forever",
+        "card_outlaw_birds_for_votes",
+        "card_gamify_memes_for_votes",
+        "card_outlaw_bureaucracy_for_charity",
+        "card_gamify_conspiracies_at_scale",
+        "card_streamline_hands_for_charity",
+        "card_mandate_dance_battles_for_clout"
+      ],
+      "portraitKey": "art/portraits/leader_03_memetrix"
+    },
+    {
+      "id": "leader_04_magnifico",
+      "name": "Supreme Consultant Magnifico",
+      "bio": "Supreme Consultant Magnifico \u2014 Meme Monarch of absurd political decisions.",
+      "traitTags": [
+        "memes",
+        "absurd",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_nationalize_oxygen_underwater",
+        "card_tax_inflation_forever",
+        "card_privatize_conspiracies_for_votes",
+        "card_gamify_conspiracies_at_scale",
+        "card_outlaw_bureaucracy_for_clout",
+        "card_crowdsource_hands_at_scale",
+        "card_ban_dance_battles_with_jazz",
+        "card_nationalize_inflation_with_jazz"
+      ],
+      "portraitKey": "art/portraits/leader_04_magnifico"
+    },
+    {
+      "id": "leader_05_memetrix",
+      "name": "Virtual Chancellor Memetrix",
+      "bio": "Virtual Chancellor Memetrix \u2014 Chaos Conductor of absurd political decisions.",
+      "traitTags": [
+        "chaos",
+        "panic",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_privatize_conspiracies_for_votes",
+        "card_privatize_reality_at_scale",
+        "card_mandate_memes_for_charity",
+        "card_privatize_hands_for_charity",
+        "card_outlaw_pigeons_with_jazz",
+        "card_mandate_dance_battles_for_clout",
+        "card_ban_oxygen_via_polls",
+        "card_privatize_bureaucracy_for_clout"
+      ],
+      "portraitKey": "art/portraits/leader_05_memetrix"
+    },
+    {
+      "id": "leader_06_ledger",
+      "name": "Virtual Chancellor Ledger",
+      "bio": "Virtual Chancellor Ledger \u2014 Budget Overlord of absurd political decisions.",
+      "traitTags": [
+        "economy",
+        "math",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_celebrate_inflation_for_charity",
+        "card_tax_inflation_for_votes",
+        "card_mandate_pigeons_underwater",
+        "card_nationalize_reality_on_tuesdays",
+        "card_ban_oxygen_via_polls",
+        "card_nationalize_reality_for_votes",
+        "card_ban_oxygen_for_clout",
+        "card_nationalize_inflation_via_polls"
+      ],
+      "portraitKey": "art/portraits/leader_06_ledger"
+    },
+    {
+      "id": "leader_07_hyperion",
+      "name": "Grand Consultant Hyperion",
+      "bio": "Grand Consultant Hyperion \u2014 Iron Bureaucrat of absurd political decisions.",
+      "traitTags": [
+        "order",
+        "economy",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_tax_oxygen_forever",
+        "card_mandate_memes_for_charity",
+        "card_ban_dance_battles_with_jazz",
+        "card_gamify_inflation_underwater",
+        "card_nationalize_bureaucracy_for_votes",
+        "card_nationalize_birds_for_votes",
+        "card_mandate_oxygen_at_scale",
+        "card_privatize_reality_forever"
+      ],
+      "portraitKey": "art/portraits/leader_07_hyperion"
+    },
+    {
+      "id": "leader_08_spin",
+      "name": "Provisional Director Spin",
+      "bio": "Provisional Director Spin \u2014 Iron Bureaucrat of absurd political decisions.",
+      "traitTags": [
+        "order",
+        "economy",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_tax_pigeons_for_clout",
+        "card_celebrate_bureaucracy_on_tuesdays",
+        "card_mandate_conspiracies_on_tuesdays",
+        "card_crowdsource_birds_via_polls",
+        "card_streamline_pigeons_for_clout",
+        "card_gamify_oxygen_for_votes",
+        "card_mandate_reality_forever",
+        "card_crowdsource_dance_battles_for_clout"
+      ],
+      "portraitKey": "art/portraits/leader_08_spin"
+    },
+    {
+      "id": "leader_09_ledger",
+      "name": "Supreme Highlord Ledger",
+      "bio": "Supreme Highlord Ledger \u2014 Meme Monarch of absurd political decisions.",
+      "traitTags": [
+        "memes",
+        "absurd",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_privatize_reality_with_jazz",
+        "card_nationalize_birds_with_jazz",
+        "card_privatize_reality_forever",
+        "card_mandate_pigeons_underwater",
+        "card_ban_memes_at_scale",
+        "card_outlaw_birds_for_charity",
+        "card_privatize_inflation_with_jazz",
+        "card_gamify_conspiracies_at_scale"
+      ],
+      "portraitKey": "art/portraits/leader_09_ledger"
+    },
+    {
+      "id": "leader_10_vector",
+      "name": "Grand Consultant Vector",
+      "bio": "Grand Consultant Vector \u2014 Budget Overlord of absurd political decisions.",
+      "traitTags": [
+        "economy",
+        "math",
+        "absurd_political_decisions"
+      ],
+      "startingDeck": [
+        "card_celebrate_inflation_on_tuesdays",
+        "card_mandate_dance_battles_for_clout",
+        "card_tax_oxygen_forever",
+        "card_privatize_hands_via_polls",
+        "card_privatize_reality_forever",
+        "card_mandate_inflation_underwater",
+        "card_tax_conspiracies_via_polls",
+        "card_gamify_oxygen_for_votes"
+      ],
+      "portraitKey": "art/portraits/leader_10_vector"
     }
   ]
 }
-

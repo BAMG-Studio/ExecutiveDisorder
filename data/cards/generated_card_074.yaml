@@ -1,0 +1,23 @@
+id: card_tax_inflation_forever
+name: Tax Inflation Forever
+description: A decree to tax inflation forever.
+cost: 2
+rarity: uncommon
+tags:
+- economy
+- faction_dynamics
+- media
+effects:
+- type: ReputationDelta
+  value: -5
+- type: PanicDelta
+  value: 7
+- type: EconomyDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax inflation forever. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, tax inflation forever!

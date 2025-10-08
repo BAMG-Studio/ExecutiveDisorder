@@ -1,0 +1,19 @@
+id: card_crowdsource_hands_at_scale
+name: Crowdsource Hands at Scale
+description: A decree to crowdsource hands at scale.
+cost: 2
+rarity: uncommon
+tags:
+- crisis_management
+- panic
+- policy
+effects:
+- type: AbsurdityDelta
+  value: -3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource hands at scale. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, crowdsource hands at scale!

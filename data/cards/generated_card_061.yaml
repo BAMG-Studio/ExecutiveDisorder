@@ -1,0 +1,21 @@
+id: card_tax_reality_via_polls
+name: Tax Reality via Polls
+description: A decree to tax reality via polls.
+cost: 4
+rarity: rare
+tags:
+- media
+- media_manipulation
+- policy
+effects:
+- type: ApprovalDelta
+  value: 3
+- type: AbsurdityDelta
+  value: 7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax reality via polls. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, tax reality via polls!

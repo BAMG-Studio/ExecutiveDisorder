@@ -1,0 +1,23 @@
+id: card_outlaw_reality_on_tuesdays
+name: Outlaw Reality on Tuesdays
+description: A decree to outlaw reality on tuesdays.
+cost: 1
+rarity: uncommon
+tags:
+- crisis_management
+- panic
+- policy
+effects:
+- type: PanicDelta
+  value: 9
+- type: ReputationDelta
+  value: -5
+- type: ApprovalDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw reality on tuesdays. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, outlaw reality on tuesdays!

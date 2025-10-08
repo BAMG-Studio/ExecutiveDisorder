@@ -1,0 +1,19 @@
+id: card_ban_bureaucracy_for_votes
+name: Ban Bureaucracy for Votes
+description: A decree to ban bureaucracy for votes.
+cost: 0
+rarity: rare
+tags:
+- economy
+- faction_dynamics
+- media_manipulation
+effects:
+- type: PanicDelta
+  value: -5
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban bureaucracy for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, ban bureaucracy for votes!

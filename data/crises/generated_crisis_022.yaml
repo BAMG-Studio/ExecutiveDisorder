@@ -1,0 +1,30 @@
+id: crisis_022_algorithm
+name: Algorithm Crisis
+type: major
+category: economic
+headline: Algorithm Walkout Rocks Nation
+triggerConditions:
+  turns:
+    min: 5
+    max: 13
+  statThresholds:
+    absurdity:
+      min: 48
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: PanicDelta
+    value: -5
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 6
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_023_hashtag
+  delay: 1
+newsImage: crisis/crisis_022_algorithm
+imagePrompt: dramatic_news_photo photo capturing algorithm walkout rocks nation, dramatic
+  lighting, satirical satire.

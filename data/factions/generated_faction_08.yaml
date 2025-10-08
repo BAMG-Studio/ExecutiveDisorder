@@ -1,0 +1,22 @@
+id: faction_08_absurdity
+name: Absurdity Cult
+type: influence_group
+baseInfluence: 61
+volatility: 13
+mechanics:
+  reactions:
+  - cardTag: media
+    influenceDelta: 13
+  influenceEffects:
+  - threshold: 72
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.26
+unlockableCards:
+- card_nationalize_reality_on_tuesdays
+- card_mandate_reality_on_tuesdays
+- card_ban_pigeons_at_scale
+- card_outlaw_birds_for_votes
+- card_privatize_inflation_with_jazz
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Absurdity Cult, colors #0f3460, satire level high.'

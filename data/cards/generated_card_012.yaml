@@ -1,0 +1,19 @@
+id: card_nationalize_birds_for_votes
+name: Nationalize Birds for Votes
+description: A decree to nationalize birds for votes.
+cost: 2
+rarity: common
+tags:
+- faction_dynamics
+- media_manipulation
+- panic
+effects:
+- type: PanicDelta
+  value: -9
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize birds for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, nationalize birds for votes!

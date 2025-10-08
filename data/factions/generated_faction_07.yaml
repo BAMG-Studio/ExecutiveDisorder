@@ -1,0 +1,22 @@
+id: faction_07_grassroots
+name: Grassroots Choir
+type: influence_group
+baseInfluence: 45
+volatility: 13
+mechanics:
+  reactions:
+  - cardTag: media_manipulation
+    influenceDelta: 13
+  influenceEffects:
+  - threshold: 64
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.23
+unlockableCards:
+- card_outlaw_reality_for_votes
+- card_privatize_birds_on_tuesdays
+- card_celebrate_memes_at_scale
+- card_nationalize_bureaucracy_for_votes
+- card_mandate_pigeons_at_scale
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Grassroots Choir, colors #16213e, satire level high.'

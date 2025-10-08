@@ -1,0 +1,21 @@
+id: card_outlaw_dance_battles_forever
+name: Outlaw Dance Battles Forever
+description: A decree to outlaw dance battles forever.
+cost: 1
+rarity: common
+tags:
+- faction_dynamics
+- media
+- policy
+effects:
+- type: EconomyDelta
+  value: -4
+- type: PanicDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw dance battles forever. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, outlaw dance battles forever!

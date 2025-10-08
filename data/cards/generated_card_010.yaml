@@ -1,0 +1,21 @@
+id: card_privatize_reality_with_jazz
+name: Privatize Reality with Jazz
+description: A decree to privatize reality with jazz.
+cost: 0
+rarity: common
+tags:
+- absurd
+- faction_dynamics
+- panic
+effects:
+- type: ApprovalDelta
+  value: -3
+synergies:
+- withTag: absurd
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize reality with jazz. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, privatize reality with jazz!

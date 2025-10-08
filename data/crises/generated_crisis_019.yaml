@@ -1,0 +1,32 @@
+id: crisis_019_pigeon
+name: Pigeon Crisis
+type: catastrophic
+category: international
+headline: Pigeon Riots Rocks Nation
+triggerConditions:
+  turns:
+    min: 2
+    max: 9
+  statThresholds:
+    absurdity:
+      min: 53
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: EconomyDelta
+    value: -4
+  - type: PanicDelta
+    value: 3
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 8
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_020_pigeon
+  delay: 1
+newsImage: crisis/crisis_019_pigeon
+imagePrompt: dramatic_news_photo photo capturing pigeon riots rocks nation, dramatic
+  lighting, satirical satire.

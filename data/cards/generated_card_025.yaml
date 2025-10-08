@@ -1,0 +1,19 @@
+id: card_gamify_bureaucracy_on_tuesdays
+name: Gamify Bureaucracy on Tuesdays
+description: A decree to gamify bureaucracy on tuesdays.
+cost: 2
+rarity: uncommon
+tags:
+- absurd
+- economy
+- media
+effects:
+- type: EconomyDelta
+  value: 8
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where gamify bureaucracy on tuesdays. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, gamify bureaucracy on tuesdays!

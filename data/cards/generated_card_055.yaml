@@ -1,0 +1,21 @@
+id: card_mandate_hands_with_jazz
+name: Mandate Hands with Jazz
+description: A decree to mandate hands with jazz.
+cost: 3
+rarity: uncommon
+tags:
+- faction_dynamics
+- media_manipulation
+- panic
+effects:
+- type: AbsurdityDelta
+  value: -2
+synergies:
+- withTag: faction_dynamics
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate hands with jazz. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, mandate hands with jazz!

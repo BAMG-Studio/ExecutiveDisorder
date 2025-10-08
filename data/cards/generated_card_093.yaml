@@ -1,0 +1,23 @@
+id: card_streamline_hands_for_charity
+name: Streamline Hands for Charity
+description: A decree to streamline hands for charity.
+cost: 4
+rarity: common
+tags:
+- absurd
+- absurd_political_decisions
+- economy
+effects:
+- type: EconomyDelta
+  value: 2
+- type: AbsurdityDelta
+  value: -6
+- type: PanicDelta
+  value: 7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where streamline hands for charity. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, streamline hands for charity!

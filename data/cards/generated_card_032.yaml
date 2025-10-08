@@ -1,0 +1,25 @@
+id: card_nationalize_reality_on_tuesdays
+name: Nationalize Reality on Tuesdays
+description: A decree to nationalize reality on tuesdays.
+cost: 0
+rarity: common
+tags:
+- economy
+- media
+- policy
+effects:
+- type: ReputationDelta
+  value: -4
+- type: EconomyDelta
+  value: -8
+- type: PanicDelta
+  value: 3
+synergies:
+- withTag: media
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize reality on tuesdays. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, nationalize reality on tuesdays!

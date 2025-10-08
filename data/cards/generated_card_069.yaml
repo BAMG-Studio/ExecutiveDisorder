@@ -1,0 +1,23 @@
+id: card_celebrate_bureaucracy_on_tuesdays
+name: Celebrate Bureaucracy on Tuesdays
+description: A decree to celebrate bureaucracy on tuesdays.
+cost: 4
+rarity: common
+tags:
+- media
+- media_manipulation
+- panic
+effects:
+- type: ApprovalDelta
+  value: -9
+- type: EconomyDelta
+  value: 8
+- type: ReputationDelta
+  value: 9
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where celebrate bureaucracy on tuesdays. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, celebrate bureaucracy on tuesdays!

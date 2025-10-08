@@ -1,0 +1,19 @@
+id: card_streamline_bureaucracy_for_clout
+name: Streamline Bureaucracy for Clout
+description: A decree to streamline bureaucracy for clout.
+cost: 1
+rarity: rare
+tags:
+- absurd_political_decisions
+- economy
+- media_manipulation
+effects:
+- type: EconomyDelta
+  value: 7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where streamline bureaucracy for clout. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, streamline bureaucracy for clout!

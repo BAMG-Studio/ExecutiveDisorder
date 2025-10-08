@@ -1,0 +1,30 @@
+id: crisis_024_diplomat
+name: Diplomat Meltdown
+type: catastrophic
+category: international
+headline: Diplomat Summit Rocks Nation
+triggerConditions:
+  turns:
+    min: 5
+    max: 13
+  statThresholds:
+    absurdity:
+      min: 43
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: AbsurdityDelta
+    value: -2
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 6
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_025_hashtag
+  delay: 1
+newsImage: crisis/crisis_024_diplomat
+imagePrompt: dramatic_news_photo photo capturing diplomat summit rocks nation, dramatic
+  lighting, satirical satire.

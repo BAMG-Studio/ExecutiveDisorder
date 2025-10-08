@@ -1,0 +1,21 @@
+id: card_privatize_hands_for_charity
+name: Privatize Hands for Charity
+description: A decree to privatize hands for charity.
+cost: 4
+rarity: uncommon
+tags:
+- media
+- media_manipulation
+- policy
+effects:
+- type: AbsurdityDelta
+  value: -5
+synergies:
+- withTag: media
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize hands for charity. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, privatize hands for charity!

@@ -1,0 +1,19 @@
+id: card_tax_inflation_for_votes
+name: Tax Inflation for Votes
+description: A decree to tax inflation for votes.
+cost: 1
+rarity: uncommon
+tags:
+- absurd
+- media_manipulation
+- panic
+effects:
+- type: AbsurdityDelta
+  value: 8
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax inflation for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, tax inflation for votes!

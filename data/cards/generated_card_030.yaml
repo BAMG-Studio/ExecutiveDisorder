@@ -1,0 +1,21 @@
+id: card_mandate_hands_at_scale
+name: Mandate Hands at Scale
+description: A decree to mandate hands at scale.
+cost: 2
+rarity: common
+tags:
+- absurd
+- crisis_management
+- faction_dynamics
+effects:
+- type: PanicDelta
+  value: -4
+- type: ApprovalDelta
+  value: 5
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate hands at scale. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, mandate hands at scale!

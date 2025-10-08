@@ -1,0 +1,23 @@
+id: card_privatize_conspiracies_for_votes
+name: Privatize Conspiracies for Votes
+description: A decree to privatize conspiracies for votes.
+cost: 3
+rarity: common
+tags:
+- absurd_political_decisions
+- crisis_management
+- faction_dynamics
+effects:
+- type: EconomyDelta
+  value: 6
+- type: ApprovalDelta
+  value: -8
+- type: PanicDelta
+  value: 7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize conspiracies for votes. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, privatize conspiracies for votes!

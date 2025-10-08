@@ -1,0 +1,21 @@
+id: card_ban_pigeons_at_scale
+name: Ban Pigeons at Scale
+description: A decree to ban pigeons at scale.
+cost: 3
+rarity: uncommon
+tags:
+- absurd
+- absurd_political_decisions
+- media_manipulation
+effects:
+- type: AbsurdityDelta
+  value: -3
+- type: ReputationDelta
+  value: -6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban pigeons at scale. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, ban pigeons at scale!

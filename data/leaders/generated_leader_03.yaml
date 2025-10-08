@@ -1,0 +1,36 @@
+id: leader_03_memetrix
+name: Grand Consultant Memetrix
+title: Budget Overlord
+archetype: absurd_political_decisions
+baseStats:
+  approval: 55
+  economy: 49
+  absurdity: 84
+  reputation: 54
+  panic: 15
+traitTags:
+- economy
+- math
+- absurd_political_decisions
+ability:
+  name: Budget Overlord Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: PanicDelta
+    value: 8
+  - type: AbsurdityDelta
+    value: 2
+startingDeck:
+- card_tax_pigeons_for_charity
+- card_outlaw_hands_forever
+- card_outlaw_birds_for_votes
+- card_gamify_memes_for_votes
+- card_outlaw_bureaucracy_for_charity
+- card_gamify_conspiracies_at_scale
+- card_streamline_hands_for_charity
+- card_mandate_dance_battles_for_clout
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Grand Consultant Memetrix, embodying
+  budget overlord vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_03_memetrix_theme

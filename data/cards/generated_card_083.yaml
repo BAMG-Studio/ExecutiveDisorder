@@ -1,0 +1,23 @@
+id: card_gamify_hands_for_clout
+name: Gamify Hands for Clout
+description: A decree to gamify hands for clout.
+cost: 4
+rarity: common
+tags:
+- crisis_management
+- panic
+- policy
+effects:
+- type: ReputationDelta
+  value: 3
+- type: EconomyDelta
+  value: 8
+- type: AbsurdityDelta
+  value: -4
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where gamify hands for clout. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, gamify hands for clout!

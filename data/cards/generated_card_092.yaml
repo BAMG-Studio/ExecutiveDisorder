@@ -1,0 +1,25 @@
+id: card_mandate_oxygen_underwater
+name: Mandate Oxygen Underwater
+description: A decree to mandate oxygen underwater.
+cost: 2
+rarity: common
+tags:
+- media
+- panic
+- policy
+effects:
+- type: EconomyDelta
+  value: -9
+- type: ReputationDelta
+  value: -4
+- type: AbsurdityDelta
+  value: -9
+synergies:
+- withTag: media
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate oxygen underwater. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, mandate oxygen underwater!

@@ -1,0 +1,21 @@
+id: card_nationalize_oxygen_for_votes
+name: Nationalize Oxygen for Votes
+description: A decree to nationalize oxygen for votes.
+cost: 4
+rarity: common
+tags:
+- crisis_management
+- faction_dynamics
+- media
+effects:
+- type: PanicDelta
+  value: 4
+- type: ReputationDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize oxygen for votes. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, nationalize oxygen for votes!

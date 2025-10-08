@@ -1,0 +1,23 @@
+id: card_streamline_reality_with_jazz
+name: Streamline Reality with Jazz
+description: A decree to streamline reality with jazz.
+cost: 2
+rarity: uncommon
+tags:
+- absurd
+- media
+- panic
+effects:
+- type: EconomyDelta
+  value: 4
+- type: PanicDelta
+  value: -2
+- type: ApprovalDelta
+  value: 7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where streamline reality with jazz. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, streamline reality with jazz!

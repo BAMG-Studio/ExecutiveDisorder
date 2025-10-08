@@ -1,0 +1,22 @@
+id: faction_02_meme
+name: Meme Syndicate
+type: influence_group
+baseInfluence: 50
+volatility: 13
+mechanics:
+  reactions:
+  - cardTag: faction_dynamics
+    influenceDelta: 6
+  influenceEffects:
+  - threshold: 81
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.1
+unlockableCards:
+- card_outlaw_hands_forever
+- card_nationalize_oxygen_for_votes
+- card_nationalize_birds_for_votes
+- card_tax_oxygen_forever
+- card_mandate_pigeons_underwater
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Meme Syndicate, colors #16213e, satire level high.'

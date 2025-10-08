@@ -1,0 +1,30 @@
+id: crisis_012_comedian
+name: Comedian Saga
+type: major
+category: economic
+headline: Comedian Takeover Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 8
+  statThresholds:
+    absurdity:
+      min: 58
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ReputationDelta
+    value: 6
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 6
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_013_bureaucrat
+  delay: 1
+newsImage: crisis/crisis_012_comedian
+imagePrompt: dramatic_news_photo photo capturing comedian takeover rocks nation, dramatic
+  lighting, satirical satire.

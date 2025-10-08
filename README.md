@@ -24,13 +24,17 @@ This triggers GitHub Copilot to assist Codex CLI with:
 - ✅ Script creation & updates
 - ✅ Documentation & deployment
 
-### New Implementation Available!
+### 🧱 Week 1 Scaffolding
 
-**Character Selection System** is now fully implemented and documented!
+- `bash scripts/codex-init.sh` — generates content from `theme.json`, imports it,
+  and scaffolds the Boot/MainMenu/Gameplay scenes with UGUI ready to test.
+- `dotnet run --project ExecutiveDisorder.Game` — validates the generated JSON
+  before Unity runs.
+- Main Menu now uses Unity UI (UGUI) with leader portraits, card grid, and a
+  button that jumps into a placeholder gameplay loop for smoke testing.
 
-👉 **Start here**: Read `QUICKSTART.md` for immediate setup
-
-📚 **Full documentation**: See `docs/INDEX.md` for all guides
+👉 **Start here**: Read `QUICKSTART.md` for immediate setup, or run
+`bash scripts/codex-init.sh` to provision data + scenes in one pass.
 
 ---
 

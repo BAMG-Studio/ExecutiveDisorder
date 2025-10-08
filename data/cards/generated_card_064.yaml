@@ -1,0 +1,21 @@
+id: card_ban_dance_battles_with_jazz
+name: Ban Dance Battles with Jazz
+description: A decree to ban dance battles with jazz.
+cost: 1
+rarity: common
+tags:
+- media_manipulation
+- panic
+- policy
+effects:
+- type: PanicDelta
+  value: 2
+- type: AbsurdityDelta
+  value: -6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban dance battles with jazz. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, ban dance battles with jazz!

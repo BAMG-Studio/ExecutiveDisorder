@@ -1,0 +1,23 @@
+id: card_mandate_conspiracies_on_tuesdays
+name: Mandate Conspiracies on Tuesdays
+description: A decree to mandate conspiracies on tuesdays.
+cost: 0
+rarity: uncommon
+tags:
+- crisis_management
+- media
+- panic
+effects:
+- type: EconomyDelta
+  value: -7
+- type: PanicDelta
+  value: 3
+synergies:
+- withTag: media
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate conspiracies on tuesdays. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, mandate conspiracies on tuesdays!

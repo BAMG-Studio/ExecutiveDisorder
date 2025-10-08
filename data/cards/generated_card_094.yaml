@@ -1,0 +1,19 @@
+id: card_crowdsource_dance_battles_for_clout
+name: Crowdsource Dance Battles for Clout
+description: A decree to crowdsource dance battles for clout.
+cost: 3
+rarity: common
+tags:
+- absurd
+- media
+- policy
+effects:
+- type: ReputationDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource dance battles for clout. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, crowdsource dance battles for clout!

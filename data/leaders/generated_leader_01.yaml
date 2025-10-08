@@ -1,0 +1,36 @@
+id: leader_01_hyperion
+name: Provisional Highlord Hyperion
+title: Chaos Conductor
+archetype: absurd_political_decisions
+baseStats:
+  approval: 37
+  economy: 38
+  absurdity: 65
+  reputation: 61
+  panic: 14
+traitTags:
+- chaos
+- panic
+- absurd_political_decisions
+ability:
+  name: Chaos Conductor Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: ReputationDelta
+    value: 6
+  - type: AbsurdityDelta
+    value: 5
+startingDeck:
+- card_ban_pigeons_at_scale
+- card_outlaw_reality_for_charity
+- card_nationalize_birds_underwater
+- card_outlaw_birds_for_charity
+- card_outlaw_bureaucracy_for_clout
+- card_tax_pigeons_for_charity
+- card_streamline_pigeons_for_charity
+- card_nationalize_oxygen_underwater
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Provisional Highlord Hyperion, embodying
+  chaos conductor vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_01_hyperion_theme

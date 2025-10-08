@@ -1,0 +1,32 @@
+id: crisis_014_lobbyist
+name: Lobbyist Saga
+type: catastrophic
+category: international
+headline: Lobbyist Takeover Rocks Nation
+triggerConditions:
+  turns:
+    min: 5
+    max: 9
+  statThresholds:
+    absurdity:
+      min: 46
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: AbsurdityDelta
+    value: 8
+  - type: PanicDelta
+    value: 9
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 9
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_015_algorithm
+  delay: 1
+newsImage: crisis/crisis_014_lobbyist
+imagePrompt: dramatic_news_photo photo capturing lobbyist takeover rocks nation, dramatic
+  lighting, satirical satire.

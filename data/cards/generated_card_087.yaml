@@ -1,0 +1,23 @@
+id: card_outlaw_bureaucracy_via_polls
+name: Outlaw Bureaucracy via Polls
+description: A decree to outlaw bureaucracy via polls.
+cost: 1
+rarity: rare
+tags:
+- absurd
+- absurd_political_decisions
+- crisis_management
+effects:
+- type: ReputationDelta
+  value: -3
+- type: AbsurdityDelta
+  value: -6
+- type: PanicDelta
+  value: 4
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw bureaucracy via polls. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, outlaw bureaucracy via polls!

@@ -1,0 +1,23 @@
+id: faction_06_international
+name: International League
+type: influence_group
+baseInfluence: 68
+volatility: 11
+mechanics:
+  reactions:
+  - cardTag: economy
+    influenceDelta: 11
+  influenceEffects:
+  - threshold: 72
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.07
+unlockableCards:
+- card_outlaw_bureaucracy_for_charity
+- card_streamline_pigeons_underwater
+- card_gamify_oxygen_for_votes
+- card_outlaw_dance_battles_forever
+- card_ban_pigeons_at_scale
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for International League, colors #1a1a2e, satire level
+  high.'

@@ -1,0 +1,21 @@
+id: card_tax_pigeons_for_charity
+name: Tax Pigeons for Charity
+description: A decree to tax pigeons for charity.
+cost: 4
+rarity: uncommon
+tags:
+- absurd_political_decisions
+- panic
+- policy
+effects:
+- type: ApprovalDelta
+  value: 2
+- type: ReputationDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax pigeons for charity. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, tax pigeons for charity!

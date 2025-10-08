@@ -1,0 +1,21 @@
+id: card_celebrate_inflation_on_tuesdays
+name: Celebrate Inflation on Tuesdays
+description: A decree to celebrate inflation on tuesdays.
+cost: 0
+rarity: common
+tags:
+- absurd
+- media_manipulation
+- panic
+effects:
+- type: PanicDelta
+  value: 9
+- type: AbsurdityDelta
+  value: -9
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where celebrate inflation on tuesdays. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, celebrate inflation on tuesdays!

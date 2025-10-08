@@ -1,0 +1,36 @@
+id: leader_02_quorum
+name: Supreme Highlord Quorum
+title: Crisis Broker
+archetype: absurd_political_decisions
+baseStats:
+  approval: 61
+  economy: 37
+  absurdity: 78
+  reputation: 29
+  panic: 29
+traitTags:
+- crisis
+- diplomacy
+- absurd_political_decisions
+ability:
+  name: Crisis Broker Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: EconomyDelta
+    value: 4
+  - type: AbsurdityDelta
+    value: 3
+startingDeck:
+- card_privatize_bureaucracy_underwater
+- card_outlaw_reality_for_votes
+- card_ban_pigeons_at_scale
+- card_privatize_conspiracies_at_scale
+- card_tax_pigeons_for_clout
+- card_outlaw_reality_on_tuesdays
+- card_gamify_pigeons_underwater
+- card_celebrate_inflation_on_tuesdays
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Supreme Highlord Quorum, embodying
+  crisis broker vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_02_quorum_theme

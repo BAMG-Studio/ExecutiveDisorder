@@ -1,0 +1,22 @@
+id: faction_05_spin
+name: Spin Doctors
+type: influence_group
+baseInfluence: 69
+volatility: 6
+mechanics:
+  reactions:
+  - cardTag: media
+    influenceDelta: 5
+  influenceEffects:
+  - threshold: 69
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.15
+unlockableCards:
+- card_nationalize_oxygen_underwater
+- card_gamify_oxygen_for_votes
+- card_gamify_hands_for_clout
+- card_crowdsource_dance_battles_for_clout
+- card_privatize_conspiracies_for_votes
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Spin Doctors, colors #f1f1f1, satire level high.'

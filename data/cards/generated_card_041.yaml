@@ -1,0 +1,21 @@
+id: card_privatize_bureaucracy_for_clout
+name: Privatize Bureaucracy for Clout
+description: A decree to privatize bureaucracy for clout.
+cost: 3
+rarity: common
+tags:
+- absurd
+- absurd_political_decisions
+- panic
+effects:
+- type: AbsurdityDelta
+  value: 5
+synergies:
+- withTag: absurd
+  bonusAbsurdity: 2
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize bureaucracy for clout. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, privatize bureaucracy for clout!

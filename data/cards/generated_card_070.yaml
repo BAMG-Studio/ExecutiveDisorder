@@ -1,0 +1,21 @@
+id: card_streamline_pigeons_underwater
+name: Streamline Pigeons Underwater
+description: A decree to streamline pigeons underwater.
+cost: 2
+rarity: uncommon
+tags:
+- absurd_political_decisions
+- crisis_management
+- economy
+effects:
+- type: ApprovalDelta
+  value: 3
+synergies:
+- withTag: economy
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where streamline pigeons underwater. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, streamline pigeons underwater!

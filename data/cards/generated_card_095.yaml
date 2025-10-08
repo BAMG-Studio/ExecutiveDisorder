@@ -1,0 +1,25 @@
+id: card_outlaw_hands_underwater
+name: Outlaw Hands Underwater
+description: A decree to outlaw hands underwater.
+cost: 2
+rarity: common
+tags:
+- absurd
+- faction_dynamics
+- panic
+effects:
+- type: ReputationDelta
+  value: 9
+- type: EconomyDelta
+  value: -9
+- type: AbsurdityDelta
+  value: 7
+synergies:
+- withTag: absurd
+  bonusAbsurdity: 1
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw hands underwater. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, outlaw hands underwater!

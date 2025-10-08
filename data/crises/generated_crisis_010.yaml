@@ -1,0 +1,30 @@
+id: crisis_010_meme
+name: Meme Saga
+type: minor
+category: media
+headline: Meme Flash Mob Rocks Nation
+triggerConditions:
+  turns:
+    min: 5
+    max: 9
+  statThresholds:
+    absurdity:
+      min: 70
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: EconomyDelta
+    value: -7
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 9
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_011_algorithm
+  delay: 1
+newsImage: crisis/crisis_010_meme
+imagePrompt: dramatic_news_photo photo capturing meme flash mob rocks nation, dramatic
+  lighting, satirical satire.

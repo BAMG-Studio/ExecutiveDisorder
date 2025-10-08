@@ -12,7 +12,7 @@ namespace ExecutiveDisorder.EditorTools
     {
         private const string ScenesDir = "Assets/Game/Scenes";
 
-        [MenuItem("Codex/Setup/Create Boot & MainMenu Scenes")]
+        [MenuItem("Codex/Setup/Create Core Scenes")]
         public static void SetupAll()
         {
             Directory.CreateDirectory(ScenesDir);

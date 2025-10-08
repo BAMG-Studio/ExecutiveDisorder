@@ -1,0 +1,21 @@
+id: card_crowdsource_bureaucracy_forever
+name: Crowdsource Bureaucracy Forever
+description: A decree to crowdsource bureaucracy forever.
+cost: 2
+rarity: common
+tags:
+- absurd
+- absurd_political_decisions
+- policy
+effects:
+- type: PanicDelta
+  value: 9
+- type: ApprovalDelta
+  value: -2
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource bureaucracy forever. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, crowdsource bureaucracy forever!

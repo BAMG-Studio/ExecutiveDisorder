@@ -1,0 +1,23 @@
+id: card_streamline_pigeons_for_charity
+name: Streamline Pigeons for Charity
+description: A decree to streamline pigeons for charity.
+cost: 4
+rarity: common
+tags:
+- absurd
+- absurd_political_decisions
+- faction_dynamics
+effects:
+- type: ReputationDelta
+  value: 5
+- type: ApprovalDelta
+  value: -8
+- type: AbsurdityDelta
+  value: 7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where streamline pigeons for charity. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, streamline pigeons for charity!

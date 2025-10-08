@@ -1,0 +1,21 @@
+id: card_privatize_hands_underwater
+name: Privatize Hands Underwater
+description: A decree to privatize hands underwater.
+cost: 3
+rarity: uncommon
+tags:
+- absurd_political_decisions
+- panic
+- policy
+effects:
+- type: AbsurdityDelta
+  value: 4
+synergies:
+- withTag: policy
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize hands underwater. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, privatize hands underwater!

@@ -1,0 +1,25 @@
+id: card_crowdsource_birds_via_polls
+name: Crowdsource Birds via Polls
+description: A decree to crowdsource birds via polls.
+cost: 3
+rarity: common
+tags:
+- absurd
+- media
+- policy
+effects:
+- type: PanicDelta
+  value: 5
+- type: ReputationDelta
+  value: -5
+- type: ApprovalDelta
+  value: 2
+synergies:
+- withTag: policy
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource birds via polls. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, crowdsource birds via polls!

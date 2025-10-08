@@ -1,44 +1,2284 @@
 {
   "cards": [
     {
-      "id": "ban_birds",
-      "name": "Ban All Birds",
-      "description": "A sweeping policy to outlaw birds. Upsets nature, delights conspiracy groups.",
+      "id": "card_privatize_birds_on_tuesdays",
+      "name": "Privatize Birds on Tuesdays",
+      "description": "A decree to privatize birds on tuesdays.",
       "cost": 1,
       "rarity": "common",
-      "tags": ["policy", "absurd"],
-      "effects": [
-        {"type": "ApprovalDelta", "value": -3},
-        {"type": "AbsurdityDelta", "value": 8}
+      "tags": [
+        "absurd",
+        "media_manipulation",
+        "panic"
       ],
-      "artKey": "art/cards/ban_birds"
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -3
+        },
+        {
+          "type": "PanicDelta",
+          "value": -5
+        }
+      ],
+      "artKey": "art/cards/card_privatize_birds_on_tuesdays"
     },
     {
-      "id": "oxygen_tax",
-      "name": "Tax Oxygen",
-      "description": "Monetize air. Great for revenue, terrible for panic.",
+      "id": "card_mandate_conspiracies_on_tuesdays",
+      "name": "Mandate Conspiracies on Tuesdays",
+      "description": "A decree to mandate conspiracies on tuesdays.",
+      "cost": 0,
+      "rarity": "uncommon",
+      "tags": [
+        "crisis_management",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -7
+        },
+        {
+          "type": "PanicDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_mandate_conspiracies_on_tuesdays"
+    },
+    {
+      "id": "card_nationalize_bureaucracy_for_votes",
+      "name": "Nationalize Bureaucracy for Votes",
+      "description": "A decree to nationalize bureaucracy for votes.",
+      "cost": 3,
+      "rarity": "legendary",
+      "tags": [
+        "absurd",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -5
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -2
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_bureaucracy_for_votes"
+    },
+    {
+      "id": "card_crowdsource_hands_at_scale",
+      "name": "Crowdsource Hands at Scale",
+      "description": "A decree to crowdsource hands at scale.",
       "cost": 2,
       "rarity": "uncommon",
-      "tags": ["economy", "absurd"],
-      "effects": [
-        {"type": "EconomyDelta", "value": 5},
-        {"type": "PanicDelta", "value": 7}
+      "tags": [
+        "crisis_management",
+        "panic",
+        "policy"
       ],
-      "artKey": "art/cards/oxygen_tax"
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -3
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_hands_at_scale"
     },
     {
-      "id": "dance_vote",
-      "name": "Dance Vote",
-      "description": "Replace ballots with dance-offs. Youth love it, diplomats don't.",
+      "id": "card_tax_conspiracies_via_polls",
+      "name": "Tax Conspiracies via Polls",
+      "description": "A decree to tax conspiracies via polls.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_tax_conspiracies_via_polls"
+    },
+    {
+      "id": "card_mandate_inflation_underwater",
+      "name": "Mandate Inflation Underwater",
+      "description": "A decree to mandate inflation underwater.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "economy",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 6
+        },
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "artKey": "art/cards/card_mandate_inflation_underwater"
+    },
+    {
+      "id": "card_ban_oxygen_for_clout",
+      "name": "Ban Oxygen for Clout",
+      "description": "A decree to ban oxygen for clout.",
+      "cost": 3,
+      "rarity": "uncommon",
+      "tags": [
+        "faction_dynamics",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -2
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 6
+        },
+        {
+          "type": "PanicDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_ban_oxygen_for_clout"
+    },
+    {
+      "id": "card_ban_hands_for_charity",
+      "name": "Ban Hands for Charity",
+      "description": "A decree to ban hands for charity.",
+      "cost": 4,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -7
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 2
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": -9
+        }
+      ],
+      "artKey": "art/cards/card_ban_hands_for_charity"
+    },
+    {
+      "id": "card_ban_reality_for_votes",
+      "name": "Ban Reality for Votes",
+      "description": "A decree to ban reality for votes.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -8
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 5
+        },
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "artKey": "art/cards/card_ban_reality_for_votes"
+    },
+    {
+      "id": "card_privatize_reality_with_jazz",
+      "name": "Privatize Reality with Jazz",
+      "description": "A decree to privatize reality with jazz.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "faction_dynamics",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -3
+        }
+      ],
+      "artKey": "art/cards/card_privatize_reality_with_jazz"
+    },
+    {
+      "id": "card_outlaw_reality_on_tuesdays",
+      "name": "Outlaw Reality on Tuesdays",
+      "description": "A decree to outlaw reality on tuesdays.",
+      "cost": 1,
+      "rarity": "uncommon",
+      "tags": [
+        "crisis_management",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -5
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_reality_on_tuesdays"
+    },
+    {
+      "id": "card_nationalize_birds_for_votes",
+      "name": "Nationalize Birds for Votes",
+      "description": "A decree to nationalize birds for votes.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -9
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_birds_for_votes"
+    },
+    {
+      "id": "card_nationalize_reality_for_votes",
+      "name": "Nationalize Reality for Votes",
+      "description": "A decree to nationalize reality for votes.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "media_manipulation",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": 4
+        },
+        {
+          "type": "PanicDelta",
+          "value": 9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 5
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_reality_for_votes"
+    },
+    {
+      "id": "card_crowdsource_birds_via_polls",
+      "name": "Crowdsource Birds via Polls",
+      "description": "A decree to crowdsource birds via polls.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 5
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -5
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_birds_via_polls"
+    },
+    {
+      "id": "card_ban_bureaucracy_for_votes",
+      "name": "Ban Bureaucracy for Votes",
+      "description": "A decree to ban bureaucracy for votes.",
+      "cost": 0,
+      "rarity": "rare",
+      "tags": [
+        "economy",
+        "faction_dynamics",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -5
+        }
+      ],
+      "artKey": "art/cards/card_ban_bureaucracy_for_votes"
+    },
+    {
+      "id": "card_celebrate_inflation_for_charity",
+      "name": "Celebrate Inflation for Charity",
+      "description": "A decree to celebrate inflation for charity.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media_manipulation",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 6
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -7
+        }
+      ],
+      "artKey": "art/cards/card_celebrate_inflation_for_charity"
+    },
+    {
+      "id": "card_outlaw_reality_for_charity",
+      "name": "Outlaw Reality for Charity",
+      "description": "A decree to outlaw reality for charity.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "faction_dynamics",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -6
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_reality_for_charity"
+    },
+    {
+      "id": "card_gamify_oxygen_for_votes",
+      "name": "Gamify Oxygen for Votes",
+      "description": "A decree to gamify oxygen for votes.",
+      "cost": 1,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "economy",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 5
+        }
+      ],
+      "artKey": "art/cards/card_gamify_oxygen_for_votes"
+    },
+    {
+      "id": "card_ban_oxygen_via_polls",
+      "name": "Ban Oxygen via Polls",
+      "description": "A decree to ban oxygen via polls.",
+      "cost": 0,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd_political_decisions",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 4
+        }
+      ],
+      "artKey": "art/cards/card_ban_oxygen_via_polls"
+    },
+    {
+      "id": "card_outlaw_birds_for_votes",
+      "name": "Outlaw Birds for Votes",
+      "description": "A decree to outlaw birds for votes.",
       "cost": 1,
       "rarity": "common",
-      "tags": ["culture", "memes"],
-      "effects": [
-        {"type": "ApprovalDelta", "value": 4},
-        {"type": "ReputationDelta", "value": -2}
+      "tags": [
+        "absurd_political_decisions",
+        "media",
+        "panic"
       ],
-      "artKey": "art/cards/dance_vote"
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -8
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_birds_for_votes"
+    },
+    {
+      "id": "card_streamline_reality_with_jazz",
+      "name": "Streamline Reality with Jazz",
+      "description": "A decree to streamline reality with jazz.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 4
+        },
+        {
+          "type": "PanicDelta",
+          "value": -2
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_streamline_reality_with_jazz"
+    },
+    {
+      "id": "card_gamify_memes_for_votes",
+      "name": "Gamify Memes for Votes",
+      "description": "A decree to gamify memes for votes.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "economy",
+        "faction_dynamics",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -5
+        },
+        {
+          "type": "PanicDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_gamify_memes_for_votes"
+    },
+    {
+      "id": "card_privatize_hands_underwater",
+      "name": "Privatize Hands Underwater",
+      "description": "A decree to privatize hands underwater.",
+      "cost": 3,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd_political_decisions",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 4
+        }
+      ],
+      "artKey": "art/cards/card_privatize_hands_underwater"
+    },
+    {
+      "id": "card_streamline_pigeons_for_charity",
+      "name": "Streamline Pigeons for Charity",
+      "description": "A decree to streamline pigeons for charity.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "faction_dynamics"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 5
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": -8
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_streamline_pigeons_for_charity"
+    },
+    {
+      "id": "card_gamify_bureaucracy_on_tuesdays",
+      "name": "Gamify Bureaucracy on Tuesdays",
+      "description": "A decree to gamify bureaucracy on tuesdays.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "economy",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 8
+        }
+      ],
+      "artKey": "art/cards/card_gamify_bureaucracy_on_tuesdays"
+    },
+    {
+      "id": "card_celebrate_inflation_on_tuesdays",
+      "name": "Celebrate Inflation on Tuesdays",
+      "description": "A decree to celebrate inflation on tuesdays.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 9
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -9
+        }
+      ],
+      "artKey": "art/cards/card_celebrate_inflation_on_tuesdays"
+    },
+    {
+      "id": "card_privatize_hands_for_charity",
+      "name": "Privatize Hands for Charity",
+      "description": "A decree to privatize hands for charity.",
+      "cost": 4,
+      "rarity": "uncommon",
+      "tags": [
+        "media",
+        "media_manipulation",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -5
+        }
+      ],
+      "artKey": "art/cards/card_privatize_hands_for_charity"
+    },
+    {
+      "id": "card_celebrate_oxygen_at_scale",
+      "name": "Celebrate Oxygen at Scale",
+      "description": "A decree to celebrate oxygen at scale.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -2
+        },
+        {
+          "type": "PanicDelta",
+          "value": -8
+        }
+      ],
+      "artKey": "art/cards/card_celebrate_oxygen_at_scale"
+    },
+    {
+      "id": "card_outlaw_reality_for_votes",
+      "name": "Outlaw Reality for Votes",
+      "description": "A decree to outlaw reality for votes.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "media",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 9
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_reality_for_votes"
+    },
+    {
+      "id": "card_mandate_hands_at_scale",
+      "name": "Mandate Hands at Scale",
+      "description": "A decree to mandate hands at scale.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "crisis_management",
+        "faction_dynamics"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -4
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 5
+        }
+      ],
+      "artKey": "art/cards/card_mandate_hands_at_scale"
+    },
+    {
+      "id": "card_privatize_pigeons_via_polls",
+      "name": "Privatize Pigeons via Polls",
+      "description": "A decree to privatize pigeons via polls.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 8
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_privatize_pigeons_via_polls"
+    },
+    {
+      "id": "card_nationalize_reality_on_tuesdays",
+      "name": "Nationalize Reality on Tuesdays",
+      "description": "A decree to nationalize reality on tuesdays.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "economy",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -4
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -8
+        },
+        {
+          "type": "PanicDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_reality_on_tuesdays"
+    },
+    {
+      "id": "card_gamify_pigeons_underwater",
+      "name": "Gamify Pigeons Underwater",
+      "description": "A decree to gamify pigeons underwater.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -9
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_gamify_pigeons_underwater"
+    },
+    {
+      "id": "card_mandate_reality_forever",
+      "name": "Mandate Reality Forever",
+      "description": "A decree to mandate reality forever.",
+      "cost": 1,
+      "rarity": "uncommon",
+      "tags": [
+        "crisis_management",
+        "economy",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 5
+        }
+      ],
+      "artKey": "art/cards/card_mandate_reality_forever"
+    },
+    {
+      "id": "card_tax_inflation_for_votes",
+      "name": "Tax Inflation for Votes",
+      "description": "A decree to tax inflation for votes.",
+      "cost": 1,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 8
+        }
+      ],
+      "artKey": "art/cards/card_tax_inflation_for_votes"
+    },
+    {
+      "id": "card_privatize_inflation_with_jazz",
+      "name": "Privatize Inflation with Jazz",
+      "description": "A decree to privatize inflation with jazz.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "crisis_management",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -7
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 8
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_privatize_inflation_with_jazz"
+    },
+    {
+      "id": "card_tax_pigeons_for_clout",
+      "name": "Tax Pigeons for Clout",
+      "description": "A decree to tax pigeons for clout.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": [
+        "economy",
+        "faction_dynamics",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -7
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_tax_pigeons_for_clout"
+    },
+    {
+      "id": "card_nationalize_inflation_via_polls",
+      "name": "Nationalize Inflation via Polls",
+      "description": "A decree to nationalize inflation via polls.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "faction_dynamics",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 6
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_inflation_via_polls"
+    },
+    {
+      "id": "card_mandate_pigeons_at_scale",
+      "name": "Mandate Pigeons at Scale",
+      "description": "A decree to mandate pigeons at scale.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "economy",
+        "faction_dynamics",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_mandate_pigeons_at_scale"
+    },
+    {
+      "id": "card_gamify_inflation_underwater",
+      "name": "Gamify Inflation Underwater",
+      "description": "A decree to gamify inflation underwater.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "media",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 9
+        },
+        {
+          "type": "PanicDelta",
+          "value": 6
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -5
+        }
+      ],
+      "artKey": "art/cards/card_gamify_inflation_underwater"
+    },
+    {
+      "id": "card_privatize_bureaucracy_for_clout",
+      "name": "Privatize Bureaucracy for Clout",
+      "description": "A decree to privatize bureaucracy for clout.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 5
+        }
+      ],
+      "artKey": "art/cards/card_privatize_bureaucracy_for_clout"
+    },
+    {
+      "id": "card_ban_birds_for_charity",
+      "name": "Ban Birds for Charity",
+      "description": "A decree to ban birds for charity.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "economy",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 6
+        }
+      ],
+      "artKey": "art/cards/card_ban_birds_for_charity"
+    },
+    {
+      "id": "card_tax_birds_on_tuesdays",
+      "name": "Tax Birds on Tuesdays",
+      "description": "A decree to tax birds on tuesdays.",
+      "cost": 3,
+      "rarity": "rare",
+      "tags": [
+        "faction_dynamics",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -4
+        },
+        {
+          "type": "PanicDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_tax_birds_on_tuesdays"
+    },
+    {
+      "id": "card_outlaw_pigeons_with_jazz",
+      "name": "Outlaw Pigeons with Jazz",
+      "description": "A decree to outlaw pigeons with jazz.",
+      "cost": 3,
+      "rarity": "uncommon",
+      "tags": [
+        "crisis_management",
+        "economy",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -2
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -5
+        },
+        {
+          "type": "PanicDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_pigeons_with_jazz"
+    },
+    {
+      "id": "card_ban_pigeons_at_scale",
+      "name": "Ban Pigeons at Scale",
+      "description": "A decree to ban pigeons at scale.",
+      "cost": 3,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -3
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_ban_pigeons_at_scale"
+    },
+    {
+      "id": "card_tax_hands_for_clout",
+      "name": "Tax Hands for Clout",
+      "description": "A decree to tax hands for clout.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "faction_dynamics",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 6
+        }
+      ],
+      "artKey": "art/cards/card_tax_hands_for_clout"
+    },
+    {
+      "id": "card_nationalize_oxygen_forever",
+      "name": "Nationalize Oxygen Forever",
+      "description": "A decree to nationalize oxygen forever.",
+      "cost": 2,
+      "rarity": "rare",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "economy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_oxygen_forever"
+    },
+    {
+      "id": "card_nationalize_bureaucracy_at_scale",
+      "name": "Nationalize Bureaucracy at Scale",
+      "description": "A decree to nationalize bureaucracy at scale.",
+      "cost": 1,
+      "rarity": "rare",
+      "tags": [
+        "absurd_political_decisions",
+        "economy",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 7
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -3
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_bureaucracy_at_scale"
+    },
+    {
+      "id": "card_crowdsource_bureaucracy_forever",
+      "name": "Crowdsource Bureaucracy Forever",
+      "description": "A decree to crowdsource bureaucracy forever.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 9
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_bureaucracy_forever"
+    },
+    {
+      "id": "card_nationalize_birds_with_jazz",
+      "name": "Nationalize Birds with Jazz",
+      "description": "A decree to nationalize birds with jazz.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "economy",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -5
+        },
+        {
+          "type": "PanicDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_birds_with_jazz"
+    },
+    {
+      "id": "card_mandate_oxygen_at_scale",
+      "name": "Mandate Oxygen at Scale",
+      "description": "A decree to mandate oxygen at scale.",
+      "cost": 1,
+      "rarity": "rare",
+      "tags": [
+        "absurd",
+        "economy",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -9
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -8
+        }
+      ],
+      "artKey": "art/cards/card_mandate_oxygen_at_scale"
+    },
+    {
+      "id": "card_privatize_hands_via_polls",
+      "name": "Privatize Hands via Polls",
+      "description": "A decree to privatize hands via polls.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "crisis_management"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 7
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 8
+        }
+      ],
+      "artKey": "art/cards/card_privatize_hands_via_polls"
+    },
+    {
+      "id": "card_mandate_inflation_via_polls",
+      "name": "Mandate Inflation via Polls",
+      "description": "A decree to mandate inflation via polls.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "economy",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 4
+        },
+        {
+          "type": "PanicDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_mandate_inflation_via_polls"
+    },
+    {
+      "id": "card_privatize_conspiracies_for_votes",
+      "name": "Privatize Conspiracies for Votes",
+      "description": "A decree to privatize conspiracies for votes.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "crisis_management",
+        "faction_dynamics"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 6
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": -8
+        },
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_privatize_conspiracies_for_votes"
+    },
+    {
+      "id": "card_mandate_hands_with_jazz",
+      "name": "Mandate Hands with Jazz",
+      "description": "A decree to mandate hands with jazz.",
+      "cost": 3,
+      "rarity": "uncommon",
+      "tags": [
+        "faction_dynamics",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_mandate_hands_with_jazz"
+    },
+    {
+      "id": "card_streamline_pigeons_for_clout",
+      "name": "Streamline Pigeons for Clout",
+      "description": "A decree to streamline pigeons for clout.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -8
+        }
+      ],
+      "artKey": "art/cards/card_streamline_pigeons_for_clout"
+    },
+    {
+      "id": "card_nationalize_hands_forever",
+      "name": "Nationalize Hands Forever",
+      "description": "A decree to nationalize hands forever.",
+      "cost": 3,
+      "rarity": "rare",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "crisis_management"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 8
+        },
+        {
+          "type": "PanicDelta",
+          "value": 9
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_hands_forever"
+    },
+    {
+      "id": "card_mandate_pigeons_underwater",
+      "name": "Mandate Pigeons Underwater",
+      "description": "A decree to mandate pigeons underwater.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "crisis_management",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_mandate_pigeons_underwater"
+    },
+    {
+      "id": "card_mandate_reality_on_tuesdays",
+      "name": "Mandate Reality on Tuesdays",
+      "description": "A decree to mandate reality on tuesdays.",
+      "cost": 1,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd_political_decisions",
+        "crisis_management",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -4
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 6
+        }
+      ],
+      "artKey": "art/cards/card_mandate_reality_on_tuesdays"
+    },
+    {
+      "id": "card_mandate_memes_for_charity",
+      "name": "Mandate Memes for Charity",
+      "description": "A decree to mandate memes for charity.",
+      "cost": 2,
+      "rarity": "rare",
+      "tags": [
+        "absurd",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 9
+        }
+      ],
+      "artKey": "art/cards/card_mandate_memes_for_charity"
+    },
+    {
+      "id": "card_tax_reality_via_polls",
+      "name": "Tax Reality via Polls",
+      "description": "A decree to tax reality via polls.",
+      "cost": 4,
+      "rarity": "rare",
+      "tags": [
+        "media",
+        "media_manipulation",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": 3
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_tax_reality_via_polls"
+    },
+    {
+      "id": "card_privatize_reality_at_scale",
+      "name": "Privatize Reality at Scale",
+      "description": "A decree to privatize reality at scale.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 6
+        }
+      ],
+      "artKey": "art/cards/card_privatize_reality_at_scale"
+    },
+    {
+      "id": "card_nationalize_oxygen_for_votes",
+      "name": "Nationalize Oxygen for Votes",
+      "description": "A decree to nationalize oxygen for votes.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "faction_dynamics",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_oxygen_for_votes"
+    },
+    {
+      "id": "card_ban_dance_battles_with_jazz",
+      "name": "Ban Dance Battles with Jazz",
+      "description": "A decree to ban dance battles with jazz.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "media_manipulation",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 2
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_ban_dance_battles_with_jazz"
+    },
+    {
+      "id": "card_privatize_reality_forever",
+      "name": "Privatize Reality Forever",
+      "description": "A decree to privatize reality forever.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "faction_dynamics",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -5
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 5
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -4
+        }
+      ],
+      "artKey": "art/cards/card_privatize_reality_forever"
+    },
+    {
+      "id": "card_tax_oxygen_forever",
+      "name": "Tax Oxygen Forever",
+      "description": "A decree to tax oxygen forever.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "faction_dynamics",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_tax_oxygen_forever"
+    },
+    {
+      "id": "card_privatize_conspiracies_at_scale",
+      "name": "Privatize Conspiracies at Scale",
+      "description": "A decree to privatize conspiracies at scale.",
+      "cost": 4,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "economy",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_privatize_conspiracies_at_scale"
+    },
+    {
+      "id": "card_ban_conspiracies_via_polls",
+      "name": "Ban Conspiracies via Polls",
+      "description": "A decree to ban conspiracies via polls.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "economy",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -4
+        }
+      ],
+      "artKey": "art/cards/card_ban_conspiracies_via_polls"
+    },
+    {
+      "id": "card_celebrate_bureaucracy_on_tuesdays",
+      "name": "Celebrate Bureaucracy on Tuesdays",
+      "description": "A decree to celebrate bureaucracy on tuesdays.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "media",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -9
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 8
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 9
+        }
+      ],
+      "artKey": "art/cards/card_celebrate_bureaucracy_on_tuesdays"
+    },
+    {
+      "id": "card_streamline_pigeons_underwater",
+      "name": "Streamline Pigeons Underwater",
+      "description": "A decree to streamline pigeons underwater.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd_political_decisions",
+        "crisis_management",
+        "economy"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_streamline_pigeons_underwater"
+    },
+    {
+      "id": "card_outlaw_birds_for_charity",
+      "name": "Outlaw Birds for Charity",
+      "description": "A decree to outlaw birds for charity.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "media",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 6
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": -3
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 4
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_birds_for_charity"
+    },
+    {
+      "id": "card_privatize_hands_with_jazz",
+      "name": "Privatize Hands with Jazz",
+      "description": "A decree to privatize hands with jazz.",
+      "cost": 4,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 6
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 7
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_privatize_hands_with_jazz"
+    },
+    {
+      "id": "card_privatize_memes_forever",
+      "name": "Privatize Memes Forever",
+      "description": "A decree to privatize memes forever.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 7
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -7
+        }
+      ],
+      "artKey": "art/cards/card_privatize_memes_forever"
+    },
+    {
+      "id": "card_tax_inflation_forever",
+      "name": "Tax Inflation Forever",
+      "description": "A decree to tax inflation forever.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": [
+        "economy",
+        "faction_dynamics",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -5
+        },
+        {
+          "type": "PanicDelta",
+          "value": 7
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_tax_inflation_forever"
+    },
+    {
+      "id": "card_outlaw_hands_forever",
+      "name": "Outlaw Hands Forever",
+      "description": "A decree to outlaw hands forever.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "media_manipulation",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 6
+        },
+        {
+          "type": "PanicDelta",
+          "value": -7
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_hands_forever"
+    },
+    {
+      "id": "card_tax_pigeons_for_charity",
+      "name": "Tax Pigeons for Charity",
+      "description": "A decree to tax pigeons for charity.",
+      "cost": 4,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd_political_decisions",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": 2
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_tax_pigeons_for_charity"
+    },
+    {
+      "id": "card_crowdsource_hands_for_votes",
+      "name": "Crowdsource Hands for Votes",
+      "description": "A decree to crowdsource hands for votes.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "economy",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -3
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": 8
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_hands_for_votes"
+    },
+    {
+      "id": "card_mandate_dance_battles_for_clout",
+      "name": "Mandate Dance Battles for Clout",
+      "description": "A decree to mandate dance battles for clout.",
+      "cost": 0,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": -5
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 4
+        }
+      ],
+      "artKey": "art/cards/card_mandate_dance_battles_for_clout"
+    },
+    {
+      "id": "card_tax_conspiracies_at_scale",
+      "name": "Tax Conspiracies at Scale",
+      "description": "A decree to tax conspiracies at scale.",
+      "cost": 4,
+      "rarity": "uncommon",
+      "tags": [
+        "economy",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 3
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -6
+        }
+      ],
+      "artKey": "art/cards/card_tax_conspiracies_at_scale"
+    },
+    {
+      "id": "card_gamify_conspiracies_at_scale",
+      "name": "Gamify Conspiracies at Scale",
+      "description": "A decree to gamify conspiracies at scale.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "media_manipulation",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 8
+        }
+      ],
+      "artKey": "art/cards/card_gamify_conspiracies_at_scale"
+    },
+    {
+      "id": "card_nationalize_inflation_with_jazz",
+      "name": "Nationalize Inflation with Jazz",
+      "description": "A decree to nationalize inflation with jazz.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "crisis_management",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -3
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -2
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_inflation_with_jazz"
+    },
+    {
+      "id": "card_outlaw_bureaucracy_for_clout",
+      "name": "Outlaw Bureaucracy for Clout",
+      "description": "A decree to outlaw bureaucracy for clout.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "economy",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": -7
+        },
+        {
+          "type": "ApprovalDelta",
+          "value": -7
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_bureaucracy_for_clout"
+    },
+    {
+      "id": "card_gamify_hands_for_clout",
+      "name": "Gamify Hands for Clout",
+      "description": "A decree to gamify hands for clout.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 3
+        },
+        {
+          "type": "EconomyDelta",
+          "value": 8
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -4
+        }
+      ],
+      "artKey": "art/cards/card_gamify_hands_for_clout"
+    },
+    {
+      "id": "card_outlaw_dance_battles_forever",
+      "name": "Outlaw Dance Battles Forever",
+      "description": "A decree to outlaw dance battles forever.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "faction_dynamics",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -4
+        },
+        {
+          "type": "PanicDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_dance_battles_forever"
+    },
+    {
+      "id": "card_outlaw_bureaucracy_for_charity",
+      "name": "Outlaw Bureaucracy for Charity",
+      "description": "A decree to outlaw bureaucracy for charity.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 4
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_bureaucracy_for_charity"
+    },
+    {
+      "id": "card_celebrate_hands_at_scale",
+      "name": "Celebrate Hands at Scale",
+      "description": "A decree to celebrate hands at scale.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "economy",
+        "media"
+      ],
+      "effects": [
+        {
+          "type": "AbsurdityDelta",
+          "value": 9
+        }
+      ],
+      "artKey": "art/cards/card_celebrate_hands_at_scale"
+    },
+    {
+      "id": "card_outlaw_bureaucracy_via_polls",
+      "name": "Outlaw Bureaucracy via Polls",
+      "description": "A decree to outlaw bureaucracy via polls.",
+      "cost": 1,
+      "rarity": "rare",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "crisis_management"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": -3
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -6
+        },
+        {
+          "type": "PanicDelta",
+          "value": 4
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_bureaucracy_via_polls"
+    },
+    {
+      "id": "card_crowdsource_oxygen_with_jazz",
+      "name": "Crowdsource Oxygen with Jazz",
+      "description": "A decree to crowdsource oxygen with jazz.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd_political_decisions",
+        "media",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 5
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_oxygen_with_jazz"
+    },
+    {
+      "id": "card_tax_memes_forever",
+      "name": "Tax Memes Forever",
+      "description": "A decree to tax memes forever.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "crisis_management",
+        "economy",
+        "faction_dynamics"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": -6
+        },
+        {
+          "type": "PanicDelta",
+          "value": 4
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_tax_memes_forever"
+    },
+    {
+      "id": "card_crowdsource_inflation_at_scale",
+      "name": "Crowdsource Inflation at Scale",
+      "description": "A decree to crowdsource inflation at scale.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 4
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -8
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -7
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_inflation_at_scale"
+    },
+    {
+      "id": "card_privatize_bureaucracy_underwater",
+      "name": "Privatize Bureaucracy Underwater",
+      "description": "A decree to privatize bureaucracy underwater.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd_political_decisions",
+        "faction_dynamics",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": 7
+        },
+        {
+          "type": "ReputationDelta",
+          "value": 2
+        }
+      ],
+      "artKey": "art/cards/card_privatize_bureaucracy_underwater"
+    },
+    {
+      "id": "card_mandate_oxygen_underwater",
+      "name": "Mandate Oxygen Underwater",
+      "description": "A decree to mandate oxygen underwater.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "media",
+        "panic",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -9
+        },
+        {
+          "type": "ReputationDelta",
+          "value": -4
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -9
+        }
+      ],
+      "artKey": "art/cards/card_mandate_oxygen_underwater"
+    },
+    {
+      "id": "card_streamline_hands_for_charity",
+      "name": "Streamline Hands for Charity",
+      "description": "A decree to streamline hands for charity.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "absurd_political_decisions",
+        "economy"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 2
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": -6
+        },
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_streamline_hands_for_charity"
+    },
+    {
+      "id": "card_crowdsource_dance_battles_for_clout",
+      "name": "Crowdsource Dance Battles for Clout",
+      "description": "A decree to crowdsource dance battles for clout.",
+      "cost": 3,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "media",
+        "policy"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 3
+        }
+      ],
+      "artKey": "art/cards/card_crowdsource_dance_battles_for_clout"
+    },
+    {
+      "id": "card_outlaw_hands_underwater",
+      "name": "Outlaw Hands Underwater",
+      "description": "A decree to outlaw hands underwater.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "faction_dynamics",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 9
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -9
+        },
+        {
+          "type": "AbsurdityDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_outlaw_hands_underwater"
+    },
+    {
+      "id": "card_streamline_bureaucracy_for_clout",
+      "name": "Streamline Bureaucracy for Clout",
+      "description": "A decree to streamline bureaucracy for clout.",
+      "cost": 1,
+      "rarity": "rare",
+      "tags": [
+        "absurd_political_decisions",
+        "economy",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_streamline_bureaucracy_for_clout"
+    },
+    {
+      "id": "card_celebrate_memes_at_scale",
+      "name": "Celebrate Memes at Scale",
+      "description": "A decree to celebrate memes at scale.",
+      "cost": 2,
+      "rarity": "rare",
+      "tags": [
+        "absurd",
+        "economy",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "PanicDelta",
+          "value": 7
+        }
+      ],
+      "artKey": "art/cards/card_celebrate_memes_at_scale"
+    },
+    {
+      "id": "card_ban_memes_at_scale",
+      "name": "Ban Memes at Scale",
+      "description": "A decree to ban memes at scale.",
+      "cost": 4,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "media",
+        "media_manipulation"
+      ],
+      "effects": [
+        {
+          "type": "ReputationDelta",
+          "value": 6
+        },
+        {
+          "type": "EconomyDelta",
+          "value": -5
+        }
+      ],
+      "artKey": "art/cards/card_ban_memes_at_scale"
+    },
+    {
+      "id": "card_nationalize_oxygen_underwater",
+      "name": "Nationalize Oxygen Underwater",
+      "description": "A decree to nationalize oxygen underwater.",
+      "cost": 0,
+      "rarity": "uncommon",
+      "tags": [
+        "absurd",
+        "crisis_management",
+        "panic"
+      ],
+      "effects": [
+        {
+          "type": "EconomyDelta",
+          "value": -7
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_oxygen_underwater"
+    },
+    {
+      "id": "card_nationalize_birds_underwater",
+      "name": "Nationalize Birds Underwater",
+      "description": "A decree to nationalize birds underwater.",
+      "cost": 2,
+      "rarity": "common",
+      "tags": [
+        "absurd",
+        "crisis_management",
+        "economy"
+      ],
+      "effects": [
+        {
+          "type": "ApprovalDelta",
+          "value": 6
+        }
+      ],
+      "artKey": "art/cards/card_nationalize_birds_underwater"
     }
   ]
 }
-

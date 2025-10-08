@@ -1,0 +1,22 @@
+id: faction_04_crisis
+name: Crisis Cabal
+type: influence_group
+baseInfluence: 52
+volatility: 9
+mechanics:
+  reactions:
+  - cardTag: absurd
+    influenceDelta: 8
+  influenceEffects:
+  - threshold: 78
+    effect: faction_support
+    bonus:
+      approvalMultiplier: 1.07
+unlockableCards:
+- card_mandate_hands_with_jazz
+- card_ban_pigeons_at_scale
+- card_crowdsource_inflation_at_scale
+- card_ban_reality_for_votes
+- card_streamline_pigeons_underwater
+iconStyle: satirical_poster_v1
+iconPrompt: 'Faction emblem for Crisis Cabal, colors #e94560, satire level high.'

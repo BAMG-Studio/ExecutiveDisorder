@@ -1,0 +1,23 @@
+id: card_privatize_pigeons_via_polls
+name: Privatize Pigeons via Polls
+description: A decree to privatize pigeons via polls.
+cost: 3
+rarity: common
+tags:
+- absurd_political_decisions
+- media
+- media_manipulation
+effects:
+- type: ReputationDelta
+  value: 8
+- type: ApprovalDelta
+  value: 2
+synergies:
+- withTag: media
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize pigeons via polls. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, privatize pigeons via polls!

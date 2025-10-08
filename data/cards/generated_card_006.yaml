@@ -1,0 +1,23 @@
+id: card_mandate_inflation_underwater
+name: Mandate Inflation Underwater
+description: A decree to mandate inflation underwater.
+cost: 3
+rarity: common
+tags:
+- economy
+- media
+- media_manipulation
+effects:
+- type: EconomyDelta
+  value: 6
+- type: PanicDelta
+  value: 8
+synergies:
+- withTag: economy
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate inflation underwater. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, mandate inflation underwater!

@@ -1,0 +1,23 @@
+id: card_gamify_pigeons_underwater
+name: Gamify Pigeons Underwater
+description: A decree to gamify pigeons underwater.
+cost: 2
+rarity: common
+tags:
+- crisis_management
+- media
+- policy
+effects:
+- type: AbsurdityDelta
+  value: -9
+- type: ApprovalDelta
+  value: 2
+synergies:
+- withTag: crisis_management
+  bonusAbsurdity: 1
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where gamify pigeons underwater. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, gamify pigeons underwater!

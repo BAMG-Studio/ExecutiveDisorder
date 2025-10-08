@@ -1,0 +1,30 @@
+id: crisis_028_bureaucrat
+name: Bureaucrat Meltdown
+type: major
+category: social
+headline: Bureaucrat Flash Mob Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 10
+  statThresholds:
+    absurdity:
+      min: 59
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: EconomyDelta
+    value: -7
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 6
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_029_inflation
+  delay: 1
+newsImage: crisis/crisis_028_bureaucrat
+imagePrompt: dramatic_news_photo photo capturing bureaucrat flash mob rocks nation,
+  dramatic lighting, satirical satire.

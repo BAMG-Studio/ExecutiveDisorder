@@ -1,0 +1,21 @@
+id: card_outlaw_bureaucracy_for_clout
+name: Outlaw Bureaucracy for Clout
+description: A decree to outlaw bureaucracy for clout.
+cost: 2
+rarity: common
+tags:
+- economy
+- media
+- panic
+effects:
+- type: PanicDelta
+  value: -7
+- type: ApprovalDelta
+  value: -7
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw bureaucracy for clout. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, outlaw bureaucracy for clout!

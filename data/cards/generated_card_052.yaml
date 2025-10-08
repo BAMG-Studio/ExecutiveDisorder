@@ -1,0 +1,23 @@
+id: card_privatize_hands_via_polls
+name: Privatize Hands via Polls
+description: A decree to privatize hands via polls.
+cost: 4
+rarity: common
+tags:
+- absurd
+- absurd_political_decisions
+- crisis_management
+effects:
+- type: AbsurdityDelta
+  value: 9
+- type: ReputationDelta
+  value: 7
+- type: ApprovalDelta
+  value: 8
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize hands via polls. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, privatize hands via polls!

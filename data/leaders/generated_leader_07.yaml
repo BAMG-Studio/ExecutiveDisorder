@@ -1,0 +1,36 @@
+id: leader_07_hyperion
+name: Grand Consultant Hyperion
+title: Iron Bureaucrat
+archetype: absurd_political_decisions
+baseStats:
+  approval: 65
+  economy: 40
+  absurdity: 65
+  reputation: 56
+  panic: 30
+traitTags:
+- order
+- economy
+- absurd_political_decisions
+ability:
+  name: Iron Bureaucrat Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: EconomyDelta
+    value: 4
+  - type: AbsurdityDelta
+    value: 4
+startingDeck:
+- card_tax_oxygen_forever
+- card_mandate_memes_for_charity
+- card_ban_dance_battles_with_jazz
+- card_gamify_inflation_underwater
+- card_nationalize_bureaucracy_for_votes
+- card_nationalize_birds_for_votes
+- card_mandate_oxygen_at_scale
+- card_privatize_reality_forever
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Grand Consultant Hyperion, embodying
+  iron bureaucrat vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_07_hyperion_theme

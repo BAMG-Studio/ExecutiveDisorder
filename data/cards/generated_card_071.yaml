@@ -1,0 +1,25 @@
+id: card_outlaw_birds_for_charity
+name: Outlaw Birds for Charity
+description: A decree to outlaw birds for charity.
+cost: 0
+rarity: common
+tags:
+- media
+- panic
+- policy
+effects:
+- type: ReputationDelta
+  value: 6
+- type: ApprovalDelta
+  value: -3
+- type: EconomyDelta
+  value: 4
+synergies:
+- withTag: media
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where outlaw birds for charity. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, outlaw birds for charity!

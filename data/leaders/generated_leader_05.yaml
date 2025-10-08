@@ -1,0 +1,36 @@
+id: leader_05_memetrix
+name: Virtual Chancellor Memetrix
+title: Chaos Conductor
+archetype: absurd_political_decisions
+baseStats:
+  approval: 42
+  economy: 55
+  absurdity: 64
+  reputation: 49
+  panic: 14
+traitTags:
+- chaos
+- panic
+- absurd_political_decisions
+ability:
+  name: Chaos Conductor Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: ApprovalDelta
+    value: 4
+  - type: AbsurdityDelta
+    value: 4
+startingDeck:
+- card_privatize_conspiracies_for_votes
+- card_privatize_reality_at_scale
+- card_mandate_memes_for_charity
+- card_privatize_hands_for_charity
+- card_outlaw_pigeons_with_jazz
+- card_mandate_dance_battles_for_clout
+- card_ban_oxygen_via_polls
+- card_privatize_bureaucracy_for_clout
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Virtual Chancellor Memetrix, embodying
+  chaos conductor vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_05_memetrix_theme

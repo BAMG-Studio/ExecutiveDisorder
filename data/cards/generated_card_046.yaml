@@ -1,0 +1,18 @@
+id: card_tax_hands_for_clout
+name: Tax Hands for Clout
+description: A decree to tax hands for clout.
+cost: 1
+rarity: common
+tags:
+- absurd
+- faction_dynamics
+- panic
+effects:
+- type: ReputationDelta
+  value: 6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax hands for clout. highlight chaotic bureaucracy,
+  viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560, #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, tax hands for clout!

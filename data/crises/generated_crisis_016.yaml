@@ -1,0 +1,34 @@
+id: crisis_016_inflation
+name: Inflation Crisis
+type: minor
+category: political
+headline: Inflation Walkout Rocks Nation
+triggerConditions:
+  turns:
+    min: 3
+    max: 8
+  statThresholds:
+    absurdity:
+      min: 43
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ReputationDelta
+    value: -2
+  - type: AbsurdityDelta
+    value: 6
+  - type: PanicDelta
+    value: 3
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 9
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_017_meme
+  delay: 1
+newsImage: crisis/crisis_016_inflation
+imagePrompt: dramatic_news_photo photo capturing inflation walkout rocks nation, dramatic
+  lighting, satirical satire.

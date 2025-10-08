@@ -1,0 +1,21 @@
+id: card_ban_conspiracies_via_polls
+name: Ban Conspiracies via Polls
+description: A decree to ban conspiracies via polls.
+cost: 0
+rarity: common
+tags:
+- absurd_political_decisions
+- economy
+- panic
+effects:
+- type: AbsurdityDelta
+  value: -4
+synergies:
+- withTag: panic
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban conspiracies via polls. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, ban conspiracies via polls!

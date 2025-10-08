@@ -1,0 +1,21 @@
+id: card_nationalize_inflation_with_jazz
+name: Nationalize Inflation with Jazz
+description: A decree to nationalize inflation with jazz.
+cost: 3
+rarity: common
+tags:
+- absurd_political_decisions
+- crisis_management
+- panic
+effects:
+- type: ApprovalDelta
+  value: -3
+- type: AbsurdityDelta
+  value: -2
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize inflation with jazz. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, nationalize inflation with jazz!

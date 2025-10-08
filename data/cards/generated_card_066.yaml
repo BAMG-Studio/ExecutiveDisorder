@@ -1,0 +1,18 @@
+id: card_tax_oxygen_forever
+name: Tax Oxygen Forever
+description: A decree to tax oxygen forever.
+cost: 2
+rarity: common
+tags:
+- absurd_political_decisions
+- faction_dynamics
+- policy
+effects:
+- type: AbsurdityDelta
+  value: -2
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax oxygen forever. highlight chaotic bureaucracy,
+  viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560, #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, tax oxygen forever!

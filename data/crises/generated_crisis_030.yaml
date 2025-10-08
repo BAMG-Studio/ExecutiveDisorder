@@ -1,0 +1,27 @@
+id: crisis_030_comedian
+name: Comedian Crisis
+type: minor
+category: media
+headline: Comedian Inquest Rocks Nation
+triggerConditions:
+  turns:
+    min: 2
+    max: 12
+  statThresholds:
+    absurdity:
+      min: 54
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: AbsurdityDelta
+    value: 9
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 5
+chainEvents: []
+newsImage: crisis/crisis_030_comedian
+imagePrompt: dramatic_news_photo photo capturing comedian inquest rocks nation, dramatic
+  lighting, satirical satire.

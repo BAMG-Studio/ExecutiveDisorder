@@ -1,0 +1,32 @@
+id: crisis_020_pigeon
+name: Pigeon Saga
+type: minor
+category: media
+headline: Pigeon Summit Rocks Nation
+triggerConditions:
+  turns:
+    min: 2
+    max: 8
+  statThresholds:
+    absurdity:
+      min: 49
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: PanicDelta
+    value: 2
+  - type: AbsurdityDelta
+    value: -6
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 5
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_021_lobbyist
+  delay: 1
+newsImage: crisis/crisis_020_pigeon
+imagePrompt: dramatic_news_photo photo capturing pigeon summit rocks nation, dramatic
+  lighting, satirical satire.

@@ -1,0 +1,30 @@
+id: crisis_001_meme
+name: Meme Crisis
+type: minor
+category: political
+headline: Meme Summit Rocks Nation
+triggerConditions:
+  turns:
+    min: 3
+    max: 10
+  statThresholds:
+    absurdity:
+      min: 69
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: PanicDelta
+    value: 2
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 7
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_002_meme
+  delay: 1
+newsImage: crisis/crisis_001_meme
+imagePrompt: dramatic_news_photo photo capturing meme summit rocks nation, dramatic
+  lighting, satirical satire.

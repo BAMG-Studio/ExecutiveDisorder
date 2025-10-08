@@ -1,0 +1,34 @@
+id: crisis_023_hashtag
+name: Hashtag Saga
+type: major
+category: social
+headline: Hashtag Riots Rocks Nation
+triggerConditions:
+  turns:
+    min: 3
+    max: 9
+  statThresholds:
+    absurdity:
+      min: 59
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ReputationDelta
+    value: 9
+  - type: EconomyDelta
+    value: -9
+  - type: AbsurdityDelta
+    value: 7
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 6
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_024_diplomat
+  delay: 1
+newsImage: crisis/crisis_023_hashtag
+imagePrompt: dramatic_news_photo photo capturing hashtag riots rocks nation, dramatic
+  lighting, satirical satire.

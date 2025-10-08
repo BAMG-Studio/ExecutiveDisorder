@@ -1,0 +1,21 @@
+id: card_nationalize_inflation_via_polls
+name: Nationalize Inflation via Polls
+description: A decree to nationalize inflation via polls.
+cost: 3
+rarity: common
+tags:
+- crisis_management
+- faction_dynamics
+- policy
+effects:
+- type: AbsurdityDelta
+  value: 6
+synergies:
+- withTag: policy
+  bonusAbsurdity: 3
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize inflation via polls. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, nationalize inflation via polls!

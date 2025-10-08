@@ -1,0 +1,23 @@
+id: card_privatize_inflation_with_jazz
+name: Privatize Inflation with Jazz
+description: A decree to privatize inflation with jazz.
+cost: 2
+rarity: common
+tags:
+- absurd_political_decisions
+- crisis_management
+- media_manipulation
+effects:
+- type: ReputationDelta
+  value: -7
+- type: AbsurdityDelta
+  value: 8
+- type: ApprovalDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize inflation with jazz. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, privatize inflation with jazz!

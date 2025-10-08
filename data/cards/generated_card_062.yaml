@@ -1,0 +1,21 @@
+id: card_privatize_reality_at_scale
+name: Privatize Reality at Scale
+description: A decree to privatize reality at scale.
+cost: 4
+rarity: common
+tags:
+- faction_dynamics
+- panic
+- policy
+effects:
+- type: ReputationDelta
+  value: 6
+synergies:
+- withTag: faction_dynamics
+  bonusAbsurdity: 1
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where privatize reality at scale. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, privatize reality at scale!

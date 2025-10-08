@@ -96,6 +96,8 @@ public static class CodexDataImporter
         database.factions = factions;
         database.crises = crises;
 
+        TryMarkAddressable(database, "content/database/game", "database");
+
         EditorUtility.SetDirty(database);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();

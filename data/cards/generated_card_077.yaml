@@ -1,0 +1,23 @@
+id: card_crowdsource_hands_for_votes
+name: Crowdsource Hands for Votes
+description: A decree to crowdsource hands for votes.
+cost: 2
+rarity: common
+tags:
+- crisis_management
+- economy
+- media
+effects:
+- type: AbsurdityDelta
+  value: -3
+- type: ApprovalDelta
+  value: 8
+- type: EconomyDelta
+  value: 3
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where crowdsource hands for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, crowdsource hands for votes!

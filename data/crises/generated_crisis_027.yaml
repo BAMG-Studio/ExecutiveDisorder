@@ -1,0 +1,30 @@
+id: crisis_027_inflation
+name: Inflation Spectacle
+type: major
+category: economic
+headline: Inflation Riots Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 9
+  statThresholds:
+    absurdity:
+      min: 52
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: AbsurdityDelta
+    value: 9
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 4
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_028_bureaucrat
+  delay: 1
+newsImage: crisis/crisis_027_inflation
+imagePrompt: dramatic_news_photo photo capturing inflation riots rocks nation, dramatic
+  lighting, satirical satire.

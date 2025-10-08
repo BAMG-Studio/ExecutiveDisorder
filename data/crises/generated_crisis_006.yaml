@@ -1,0 +1,32 @@
+id: crisis_006_diplomat
+name: Diplomat Meltdown
+type: minor
+category: political
+headline: Diplomat Walkout Rocks Nation
+triggerConditions:
+  turns:
+    min: 2
+    max: 9
+  statThresholds:
+    absurdity:
+      min: 40
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: PanicDelta
+    value: 5
+  - type: AbsurdityDelta
+    value: 3
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 5
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_007_meme
+  delay: 1
+newsImage: crisis/crisis_006_diplomat
+imagePrompt: dramatic_news_photo photo capturing diplomat walkout rocks nation, dramatic
+  lighting, satirical satire.

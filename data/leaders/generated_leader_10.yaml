@@ -1,0 +1,36 @@
+id: leader_10_vector
+name: Grand Consultant Vector
+title: Budget Overlord
+archetype: absurd_political_decisions
+baseStats:
+  approval: 38
+  economy: 55
+  absurdity: 68
+  reputation: 70
+  panic: 31
+traitTags:
+- economy
+- math
+- absurd_political_decisions
+ability:
+  name: Budget Overlord Protocol
+  description: Leverages absurd political decisions to sway factions.
+  effects:
+  - type: PanicDelta
+    value: 5
+  - type: AbsurdityDelta
+    value: 2
+startingDeck:
+- card_celebrate_inflation_on_tuesdays
+- card_mandate_dance_battles_for_clout
+- card_tax_oxygen_forever
+- card_privatize_hands_via_polls
+- card_privatize_reality_forever
+- card_mandate_inflation_underwater
+- card_tax_conspiracies_via_polls
+- card_gamify_oxygen_for_votes
+portraitStyle: professional_portrait
+portraitPrompt: professional_portrait portrait of Grand Consultant Vector, embodying
+  budget overlord vibes and satirical energy.
+voiceStyle: authoritative_satirical
+theme_music: leader_10_vector_theme

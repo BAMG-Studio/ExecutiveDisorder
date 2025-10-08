@@ -1,0 +1,23 @@
+id: card_ban_reality_for_votes
+name: Ban Reality for Votes
+description: A decree to ban reality for votes.
+cost: 3
+rarity: common
+tags:
+- crisis_management
+- media_manipulation
+- panic
+effects:
+- type: ReputationDelta
+  value: -8
+- type: EconomyDelta
+  value: 5
+- type: PanicDelta
+  value: 8
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where ban reality for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: drumroll_hit
+voLine: Citizens, ban reality for votes!

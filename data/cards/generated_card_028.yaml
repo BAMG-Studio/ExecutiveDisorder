@@ -1,0 +1,23 @@
+id: card_celebrate_oxygen_at_scale
+name: Celebrate Oxygen at Scale
+description: A decree to celebrate oxygen at scale.
+cost: 4
+rarity: common
+tags:
+- faction_dynamics
+- media
+- panic
+effects:
+- type: EconomyDelta
+  value: -2
+- type: PanicDelta
+  value: -8
+synergies:
+- withTag: panic
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where celebrate oxygen at scale. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, celebrate oxygen at scale!

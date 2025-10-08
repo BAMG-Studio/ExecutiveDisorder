@@ -1,0 +1,21 @@
+id: card_nationalize_birds_with_jazz
+name: Nationalize Birds with Jazz
+description: A decree to nationalize birds with jazz.
+cost: 1
+rarity: common
+tags:
+- absurd
+- economy
+- policy
+effects:
+- type: ApprovalDelta
+  value: -5
+- type: PanicDelta
+  value: -6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize birds with jazz. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, nationalize birds with jazz!

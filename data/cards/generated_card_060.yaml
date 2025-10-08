@@ -1,0 +1,19 @@
+id: card_mandate_memes_for_charity
+name: Mandate Memes for Charity
+description: A decree to mandate memes for charity.
+cost: 2
+rarity: rare
+tags:
+- absurd
+- media
+- panic
+effects:
+- type: AbsurdityDelta
+  value: 9
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where mandate memes for charity. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, mandate memes for charity!

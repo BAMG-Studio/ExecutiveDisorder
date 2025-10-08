@@ -1,0 +1,23 @@
+id: card_nationalize_bureaucracy_at_scale
+name: Nationalize Bureaucracy at Scale
+description: A decree to nationalize bureaucracy at scale.
+cost: 1
+rarity: rare
+tags:
+- absurd_political_decisions
+- economy
+- media
+effects:
+- type: AbsurdityDelta
+  value: 7
+- type: ReputationDelta
+  value: -3
+synergies:
+- withTag: media
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize bureaucracy at scale. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, nationalize bureaucracy at scale!

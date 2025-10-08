@@ -1,0 +1,19 @@
+id: card_gamify_oxygen_for_votes
+name: Gamify Oxygen for Votes
+description: A decree to gamify oxygen for votes.
+cost: 1
+rarity: uncommon
+tags:
+- absurd
+- economy
+- panic
+effects:
+- type: AbsurdityDelta
+  value: 5
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where gamify oxygen for votes. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: megaphone_hit
+voLine: Citizens, gamify oxygen for votes!

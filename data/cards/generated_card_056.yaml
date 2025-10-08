@@ -1,0 +1,19 @@
+id: card_streamline_pigeons_for_clout
+name: Streamline Pigeons for Clout
+description: A decree to streamline pigeons for clout.
+cost: 3
+rarity: common
+tags:
+- crisis_management
+- media_manipulation
+- panic
+effects:
+- type: PanicDelta
+  value: -8
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where streamline pigeons for clout. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: flashbulb_hit
+voLine: Citizens, streamline pigeons for clout!

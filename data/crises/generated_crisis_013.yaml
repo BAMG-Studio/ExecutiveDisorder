@@ -1,0 +1,34 @@
+id: crisis_013_bureaucrat
+name: Bureaucrat Crisis
+type: major
+category: social
+headline: Bureaucrat Summit Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 8
+  statThresholds:
+    absurdity:
+      min: 49
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: AbsurdityDelta
+    value: -9
+  - type: ReputationDelta
+    value: -9
+  - type: EconomyDelta
+    value: -8
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 6
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_014_lobbyist
+  delay: 1
+newsImage: crisis/crisis_013_bureaucrat
+imagePrompt: dramatic_news_photo photo capturing bureaucrat summit rocks nation, dramatic
+  lighting, satirical satire.

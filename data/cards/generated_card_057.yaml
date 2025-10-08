@@ -1,0 +1,23 @@
+id: card_nationalize_hands_forever
+name: Nationalize Hands Forever
+description: A decree to nationalize hands forever.
+cost: 3
+rarity: rare
+tags:
+- absurd
+- absurd_political_decisions
+- crisis_management
+effects:
+- type: AbsurdityDelta
+  value: 8
+- type: PanicDelta
+  value: 9
+synergies:
+- withTag: absurd_political_decisions
+  bonusAbsurdity: 4
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where nationalize hands forever. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, nationalize hands forever!

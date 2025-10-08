@@ -1,0 +1,30 @@
+id: crisis_029_inflation
+name: Inflation Spectacle
+type: catastrophic
+category: international
+headline: Inflation Walkout Rocks Nation
+triggerConditions:
+  turns:
+    min: 4
+    max: 11
+  statThresholds:
+    absurdity:
+      min: 62
+options:
+- id: press_conference
+  text: Hold emergency press conference
+  effects:
+  - type: ReputationDelta
+    value: 6
+- id: meme_warfare
+  text: Deploy meme warfare unit
+  effects:
+  - type: AbsurdityDelta
+    value: 5
+chainEvents:
+- triggeredBy: press_conference
+  nextCrisis: crisis_030_comedian
+  delay: 1
+newsImage: crisis/crisis_029_inflation
+imagePrompt: dramatic_news_photo photo capturing inflation walkout rocks nation, dramatic
+  lighting, satirical satire.

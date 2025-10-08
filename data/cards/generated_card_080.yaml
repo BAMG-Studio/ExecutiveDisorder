@@ -1,0 +1,19 @@
+id: card_gamify_conspiracies_at_scale
+name: Gamify Conspiracies at Scale
+description: A decree to gamify conspiracies at scale.
+cost: 2
+rarity: common
+tags:
+- absurd
+- media_manipulation
+- policy
+effects:
+- type: PanicDelta
+  value: 8
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where gamify conspiracies at scale. highlight
+  chaotic bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, gamify conspiracies at scale!

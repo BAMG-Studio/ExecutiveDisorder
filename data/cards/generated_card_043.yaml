@@ -1,0 +1,21 @@
+id: card_tax_birds_on_tuesdays
+name: Tax Birds on Tuesdays
+description: A decree to tax birds on tuesdays.
+cost: 3
+rarity: rare
+tags:
+- faction_dynamics
+- media_manipulation
+- panic
+effects:
+- type: ApprovalDelta
+  value: -4
+- type: PanicDelta
+  value: -6
+synergies: []
+artStyle: satirical_poster_v1
+artPrompt: 'satirical policy decree where tax birds on tuesdays. highlight chaotic
+  bureaucracy, viral media reactions, palette #1a1a2e, #16213e, #0f3460, #e94560,
+  #f1f1f1.'
+sfxKey: gavel_hit
+voLine: Citizens, tax birds on tuesdays!
