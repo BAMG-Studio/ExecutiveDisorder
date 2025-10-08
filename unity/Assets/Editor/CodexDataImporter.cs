@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using ExecutiveDisorder.Game.Data;
@@ -146,6 +147,7 @@ public static class CodexDataImporter
         Directory.CreateDirectory(Path.Combine(OutRoot, "Leaders"));
         Directory.CreateDirectory(Path.Combine(OutRoot, "Factions"));
         Directory.CreateDirectory(Path.Combine(OutRoot, "Crises"));
+        Directory.CreateDirectory("Assets/Resources/Generated");
     }
 
     private static GameDatabase GetOrCreateDatabase()
@@ -199,6 +201,7 @@ public static class CodexDataImporter
 
             if (isNew) AssetDatabase.CreateAsset(asset, assetPath);
             EditorUtility.SetDirty(asset);
+            TryMarkAddressable(asset, $"content/cards/{asset.id}", "cards");
             result.Add(asset);
         }
         return result;
@@ -227,6 +230,7 @@ public static class CodexDataImporter
 
             if (isNew) AssetDatabase.CreateAsset(asset, assetPath);
             EditorUtility.SetDirty(asset);
+            TryMarkAddressable(asset, $"content/leaders/{asset.id}", "leaders");
             result.Add(asset);
         }
         return result;
@@ -254,6 +258,7 @@ public static class CodexDataImporter
 
             if (isNew) AssetDatabase.CreateAsset(asset, assetPath);
             EditorUtility.SetDirty(asset);
+            TryMarkAddressable(asset, $"content/factions/{asset.id}", "factions");
             result.Add(asset);
         }
         return result;
@@ -297,6 +302,7 @@ public static class CodexDataImporter
 
             if (isNew) AssetDatabase.CreateAsset(asset, assetPath);
             EditorUtility.SetDirty(asset);
+            TryMarkAddressable(asset, $"content/crises/{asset.id}", "crises");
             result.Add(asset);
         }
         return result;
@@ -307,5 +313,110 @@ public static class CodexDataImporter
         if (string.IsNullOrEmpty(hex)) return fallback;
         if (ColorUtility.TryParseHtmlString(hex, out var c)) return c;
         return fallback;
+    }
+
+    private static void TryMarkAddressable(UnityEngine.Object asset, string address, string label)
+    {
+        if (asset == null) return;
+
+        try
+        {
+            var settingsType = Type.GetType("UnityEditor.AddressableAssets.Settings.AddressableAssetSettings, Unity.Addressables.Editor");
+            var defaultObjectType = Type.GetType("UnityEditor.AddressableAssets.Settings.AddressableAssetSettingsDefaultObject, Unity.Addressables.Editor");
+            if (settingsType == null || defaultObjectType == null) return;
+
+            var getSettings = defaultObjectType.GetMethod("GetSettings", BindingFlags.Public | BindingFlags.Static, null, new[] { typeof(bool) }, null);
+            if (getSettings == null) return;
+
+            var settings = getSettings.Invoke(null, new object[] { true });
+            if (settings == null) return;
+
+            var assetPath = AssetDatabase.GetAssetPath(asset);
+            if (string.IsNullOrEmpty(assetPath)) return;
+            var guid = AssetDatabase.AssetPathToGUID(assetPath);
+            if (string.IsNullOrEmpty(guid)) return;
+
+            var defaultGroupProp = settingsType.GetProperty("DefaultGroup", BindingFlags.Public | BindingFlags.Instance);
+            var group = defaultGroupProp?.GetValue(settings);
+            if (group == null)
+            {
+                var groupsProp = settingsType.GetProperty("groups", BindingFlags.Public | BindingFlags.Instance);
+                if (groupsProp?.GetValue(settings) is System.Collections.IList groups && groups.Count > 0)
+                {
+                    group = groups[0];
+                }
+            }
+            if (group == null) return;
+
+            MethodInfo createOrMoveEntry = null;
+            foreach (var method in settingsType.GetMethods(BindingFlags.Public | BindingFlags.Instance))
+            {
+                var parameters = method.GetParameters();
+                if (method.Name == "CreateOrMoveEntry" && parameters.Length >= 2 && parameters[0].ParameterType == typeof(string))
+                {
+                    createOrMoveEntry = method;
+                    break;
+                }
+            }
+
+            if (createOrMoveEntry == null) return;
+
+            object entry;
+            var paramCount = createOrMoveEntry.GetParameters().Length;
+            if (paramCount == 4)
+            {
+                entry = createOrMoveEntry.Invoke(settings, new object[] { guid, group, false, false });
+            }
+            else if (paramCount == 3)
+            {
+                entry = createOrMoveEntry.Invoke(settings, new object[] { guid, group, false });
+            }
+            else
+            {
+                entry = createOrMoveEntry.Invoke(settings, new object[] { guid, group });
+            }
+
+            if (entry == null) return;
+
+            var entryType = entry.GetType();
+            entryType.GetProperty("address", BindingFlags.Public | BindingFlags.Instance)?.SetValue(entry, address);
+
+            MethodInfo setLabel = null;
+            foreach (var method in entryType.GetMethods(BindingFlags.Public | BindingFlags.Instance))
+            {
+                if (method.Name == "SetLabel" && method.GetParameters().Length > 0)
+                {
+                    setLabel = method;
+                    break;
+                }
+            }
+
+            if (setLabel != null)
+            {
+                var parameters = setLabel.GetParameters();
+                var args = new object[parameters.Length];
+                for (int i = 0; i < parameters.Length; i++)
+                {
+                    if (i == 0)
+                    {
+                        args[i] = label;
+                    }
+                    else
+                    {
+                        args[i] = true;
+                    }
+                }
+                setLabel.Invoke(entry, args);
+            }
+
+            if (settings is ScriptableObject so)
+            {
+                EditorUtility.SetDirty(so);
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogWarning($"CodexDataImporter: Addressables assignment failed for {asset.name}: {ex.Message}");
+        }
     }
 }

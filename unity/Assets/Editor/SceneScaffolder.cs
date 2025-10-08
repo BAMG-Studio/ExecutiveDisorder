@@ -50,6 +50,7 @@ namespace ExecutiveDisorder.EditorTools
             CreateEventSystem(scene);
 
             var controllerGO = new GameObject("MainMenuController", typeof(ExecutiveDisorder.Game.MainMenuController));
+            EditorSceneManager.MoveGameObjectToScene(controllerGO, scene);
             controllerGO.transform.SetParent(canvas.transform, false);
             var controller = controllerGO.GetComponent<ExecutiveDisorder.Game.MainMenuController>();
 
@@ -197,6 +198,7 @@ namespace ExecutiveDisorder.EditorTools
             CreateEventSystem(scene);
 
             var controllerGO = new GameObject("GameplayController", typeof(ExecutiveDisorder.Game.GameplayController));
+            EditorSceneManager.MoveGameObjectToScene(controllerGO, scene);
             controllerGO.transform.SetParent(canvas.transform, false);
             var controller = controllerGO.GetComponent<ExecutiveDisorder.Game.GameplayController>();
 
