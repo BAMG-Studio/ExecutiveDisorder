@@ -10,6 +10,20 @@ Balance 4 critical resources, interact with 10 unique political characters, and 
 
 ## 🚀 Quick Start
 
+### 🤖 Codex CLI Command
+
+**Everything automated in one command:**
+```bash
+update
+```
+
+This triggers GitHub Copilot to assist Codex CLI with:
+- ✅ Unity WebGL builds
+- ✅ Automated commits & version control
+- ✅ Build optimization & debugging
+- ✅ Script creation & updates
+- ✅ Documentation & deployment
+
 ### New Implementation Available!
 
 **Character Selection System** is now fully implemented and documented!

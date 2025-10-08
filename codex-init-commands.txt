@@ -1,0 +1,37 @@
+## Codex CLI - One-Time Initialization Commands
+## Copy and paste these commands one by one into your WSL terminal
+
+# Step 1: Navigate to project
+cd /mnt/c/Users/POK28/source/repos/ExecutiveDisorderReplit
+
+# Step 2: Create and switch to codex-cli branch
+git checkout -b codex-cli
+
+# Step 3: Stage all automation files
+git add scripts/codex-*.sh
+git add scripts/setup-codex-remote.sh
+git add docs/CODEX_CLI_INTEGRATION.md
+git add README.md
+git add COLLABORATION_PLAN.md
+git add QUICK_START.md
+
+# Step 4: Create initial commit
+git commit -m "🤖 Codex CLI: Initial branch setup
+
+- Created codex-cli branch for automated builds
+- Added build automation scripts (codex-workflow.sh, codex-build-webgl.sh)
+- Added Codex CLI integration documentation
+- Added setup-codex-remote.sh for dual-remote configuration
+- Ready for automated Unity builds
+
+[codex-cli-init]"
+
+# Step 5: Show status
+git log --oneline -n 3
+git status
+
+# Step 6: Push to BAMG-Studio repo (after setup-codex-remote.sh is run)
+# git push codex-cli codex-cli:main
+
+echo "✅ Codex CLI branch initialized!"
+echo "Next: Run 'bash scripts/setup-codex-remote.sh' to configure remotes"
