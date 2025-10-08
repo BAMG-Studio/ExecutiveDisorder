@@ -1,0 +1,44 @@
+{
+  "season": "political_satire_2025",
+  "tone": "satirical",
+  "difficulty": "medium",
+  "content_counts": {
+    "cards": 100,
+    "leaders": 10,
+    "crises": 30,
+    "factions": 8
+  },
+  "themes": {
+    "primary": "absurd_political_decisions",
+    "secondary": ["media_manipulation", "crisis_management", "faction_dynamics"],
+    "satire_level": "high"
+  },
+  "art_direction": {
+    "card_style": "satirical_poster_v1",
+    "leader_style": "professional_portrait",
+    "crisis_style": "dramatic_news_photo",
+    "palette": ["#1a1a2e", "#16213e", "#0f3460", "#e94560", "#f1f1f1"]
+  },
+  "audio_direction": {
+    "music_style": "dramatic_orchestral_satire",
+    "sfx_style": "impactful_political",
+    "voice_style": "authoritative_satirical"
+  },
+  "generation_config": {
+    "providers": {
+      "image": "mock",
+      "audio": "mock",
+      "text": "local"
+    },
+    "local_models": {
+      "stable_diffusion": "path/to/model.safetensors",
+      "audiocraft": "path/to/audiocraft",
+      "llm": "ollama/llama3"
+    },
+    "api_keys": {
+      "dalle": "${DALLE_API_KEY}",
+      "elevenlabs": "${ELEVENLABS_API_KEY}",
+      "openai": "${OPENAI_API_KEY}"
+    }
+  }
+}

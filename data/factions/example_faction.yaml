@@ -1,0 +1,94 @@
+# Example Faction Schema for Executive Disorder
+# Factions represent power groups that react to player decisions
+
+id: "the_media"
+name: "The Media Collective"
+shortName: "Media"
+type: "influence_group"  # influence_group, political_party, corporate_bloc, etc.
+
+# Faction description
+description: "A loose alliance of news networks, social media platforms, and journalists who control public narrative."
+motto: "We report. You panic."
+alignment: "chaotic_neutral"
+
+# Base influence (0-100)
+baseInfluence: 60
+volatility: 8  # How quickly influence changes (1-10)
+
+# Faction mechanics
+mechanics:
+  # How they react to different actions
+  reactions:
+    - cardTag: "scandal"
+      influenceDelta: 15
+      description: "Media loves scandals"
+    
+    - cardTag: "propaganda"
+      influenceDelta: -10
+      description: "Media resists propaganda attempts"
+    
+    - cardTag: "transparency"
+      influenceDelta: 20
+      description: "Media rewards transparency"
+  
+  # What happens at different influence levels
+  influenceEffects:
+    - threshold: 80
+      effect: "media_support"
+      description: "+10% Approval gain from all actions"
+      bonus:
+        approvalMultiplier: 1.1
+    
+    - threshold: 40
+      effect: "media_neutral"
+      description: "No special effects"
+    
+    - threshold: 20
+      effect: "media_opposition"
+      description: "All scandals are amplified x2"
+      bonus:
+        scandalMultiplier: 2.0
+
+# Special abilities
+abilities:
+  - id: "breaking_news"
+    name: "Breaking News Cycle"
+    description: "Every 5 turns, the media can trigger a random scandal"
+    trigger: "turn_interval"
+    interval: 5
+    effect: "spawn_scandal_crisis"
+  
+  - id: "narrative_shift"
+    name: "Control the Narrative"
+    description: "High media influence can reduce panic from crises"
+    condition: "influence > 70"
+    effect: "panic_reduction"
+    value: 0.25  # 25% panic reduction
+
+# Faction-specific cards (unlocked at high influence)
+unlockableCards:
+  - id: "exclusive_interview"
+    unlockAt: 75
+  - id: "media_blackout"
+    unlockAt: 85
+  - id: "viral_campaign"
+    unlockAt: 90
+
+# AI behavior
+aiBehavior:
+  priority: "scandal_generation"
+  aggressiveness: 7  # 1-10 scale
+  targetPreference: "reputation"  # Which stat they attack/support
+
+# Visual/Audio
+iconStyle: "microphone_news"
+iconPrompt: "minimalist icon of microphone and camera, news network aesthetic, blue and white color scheme"
+themeMusic: "news_room_tension"
+ambience: "newsroom_chatter"
+
+# Metadata
+powerLevel: 8  # 1-10 influence on game
+complexity: "medium"
+author: "procedural_gen_v1"
+generatedAt: "2025-10-08T00:00:00Z"
+version: 1

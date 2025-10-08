@@ -16,18 +16,44 @@ echo "========================================="
 echo ""
 
 # Step 1: Verify we're in the right repo
-CURRENT_REPO=$(git remote get-url codex-cli 2>/dev/null || echo "NOT_SET")
+CURRENT_REPO=$(git remote get-url origin 2>/dev/null || echo "NOT_SET")
 
 if [[ "$CURRENT_REPO" != *"BAMG-Studio/ExecutiveDisorder"* ]]; then
-    echo -e "${YELLOW}⚠️  Codex CLI remote not configured${NC}"
+    echo -e "${YELLOW}⚠️  BAMG-Studio remote not configured${NC}"
     echo "Run: bash scripts/setup-codex-remote.sh"
     exit 1
 fi
 
-echo -e "${GREEN}✅ Codex CLI remote configured${NC}"
+echo -e "${GREEN}✅ BAMG-Studio remote configured${NC}"
 echo ""
 
-# Step 2: Build WebGL
+# Step 0: Content Generation Pipeline
+echo -e "${BLUE}📝 Step 0: Content Generation Pipeline...${NC}"
+
+# Check if Python is available
+if command -v python3 &> /dev/null; then
+    echo -e "${GREEN}  ✓ Python3 found${NC}"
+    
+    # Generate content data (YAML)
+    echo -e "${BLUE}  → Generating content data...${NC}"
+    python3 tools/gen_content.py theme.json 2>/dev/null || echo "  ⚠️  Content generation skipped"
+    
+    # Generate images
+    echo -e "${BLUE}  → Generating images...${NC}"
+    python3 tools/gen_images.py 2>/dev/null || echo "  ⚠️  Image generation skipped"
+    
+    # Generate audio
+    echo -e "${BLUE}  → Generating audio...${NC}"
+    python3 tools/gen_audio.py 2>/dev/null || echo "  ⚠️  Audio generation skipped"
+    
+    echo -e "${GREEN}  ✓ Content generation complete${NC}"
+else
+    echo -e "${YELLOW}  ⚠️  Python3 not found, skipping content generation${NC}"
+fi
+
+echo ""
+
+# Step 1: Unity Build
 echo -e "${BLUE}📦 Step 1: Building WebGL...${NC}"
 bash scripts/codex-build-webgl.sh
 
@@ -51,6 +77,7 @@ COMMIT_MSG="🤖 Codex CLI: WebGL Build $BUILD_VERSION
 - Platform: WebGL
 - Unity Version: 6.0
 - Build Type: Automated
+- Content: Auto-generated
 - Timestamp: $(date)
 
 [automated-build]"
@@ -60,9 +87,9 @@ git commit -m "$COMMIT_MSG" || echo "No changes to commit"
 echo -e "${GREEN}✅ Build committed${NC}"
 echo ""
 
-# Step 5: Push to Codex CLI repo
+# Step 5: Push to BAMG-Studio repo
 echo -e "${BLUE}🚀 Step 3: Pushing to BAMG-Studio repo...${NC}"
-git push codex-cli main
+git push origin codex-cli:main
 
 echo ""
 echo -e "${GREEN}✨ Codex CLI workflow complete!${NC}"

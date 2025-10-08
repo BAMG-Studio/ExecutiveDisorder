@@ -1,0 +1,56 @@
+# Example Card Schema for Executive Disorder
+# This template shows the structure for creating policy cards
+
+id: "ban_all_birds"
+name: "Ban All Birds"
+description: "An executive order banning all avian creatures from the nation. Because reasons."
+flavor_text: "Make America Flightless Again"
+
+# Card mechanics
+cost: 1
+rarity: "common"  # common, uncommon, rare, legendary
+tags:
+  - "policy"
+  - "absurd"
+  - "executive_order"
+
+# Effects on resources (Approval, Economy, Absurdity, Reputation, Panic)
+effects:
+  - type: "ApprovalDelta"
+    value: -3
+    description: "Citizens are confused and upset"
+  
+  - type: "AbsurdityDelta"
+    value: 8
+    description: "This is peak absurdity"
+  
+  - type: "PanicDelta"
+    value: 2
+    description: "Bird watchers panic"
+
+# Synergies with other cards
+synergies:
+  - withTag: "memes"
+    bonusAbsurdity: 2
+    description: "Combos with meme-related cards"
+  
+  - withTag: "propaganda"
+    bonusApproval: 1
+    description: "Spin it as national security"
+
+# Unlock requirements (optional)
+prerequisites:
+  minTurn: 3
+  requiredTags: []
+  requiredLeader: ""  # empty = any leader
+
+# Visual/Audio
+artStyle: "satirical_poster_v1"
+artPrompt: "1950s propaganda poster style, 'NO BIRDS' sign with dramatic eagle silhouette crossed out, red and black color scheme"
+sfxKey: "policy_slam"
+voLine: "No more birds! They're spying on us!"
+
+# Metadata
+author: "procedural_gen_v1"
+generatedAt: "2025-10-08T00:00:00Z"
+version: 1

@@ -1,0 +1,69 @@
+# Example Leader Schema for Executive Disorder
+# Leaders have unique stats, abilities, and starting decks
+
+id: "rex_scaleston"
+name: "Rex Scaleston III"
+title: "The Iguana King"
+archetype: "absurdist"  # absurdist, authoritarian, populist, technocrat, etc.
+
+# Character description
+bio: "An actual iguana who somehow became president. Nobody knows how. Nobody asks."
+personality: "Chaotic, unpredictable, surprisingly effective at causing mayhem"
+quote: "*lizard noises intensify*"
+
+# Base stats (0-100 scale)
+baseStats:
+  approval: 45
+  economy: 40
+  absurdity: 85
+  reputation: 30
+  panic: 20
+
+# Unique ability
+ability:
+  name: "Cold Blooded"
+  description: "Immune to scandal. +5 Absurdity whenever playing 'bizarre' tagged cards."
+  type: "passive"
+  effects:
+    - trigger: "onCardPlay"
+      condition: "hasTag:bizarre"
+      effect: "AbsurdityDelta"
+      value: 5
+
+# Starting deck (card IDs)
+startingDeck:
+  - "ban_all_birds"
+  - "executive_nap"
+  - "random_tweet"
+  - "basking_decree"
+  - "iguana_propaganda"
+  - "tail_whip_veto"
+  - "shed_skin_scandal"
+  - "heat_lamp_budget"
+
+# Faction affinities
+factionBonuses:
+  absurdists: 10
+  media: -5
+  military: 0
+  corporate: -10
+
+# Visual/Audio
+portraitStyle: "realistic_iguana_in_suit"
+portraitPrompt: "professional presidential portrait of an iguana in a suit, oval office background, serious expression, photorealistic"
+voiceStyle: "deep_gravelly"
+voicePrompt: "Generate deep, slow, gravelly voice with slight reptilian hiss"
+theme_music: "iguana_king_theme"
+
+# Unlock requirements
+unlockCondition:
+  default: true  # Available from start
+  alternateUnlock: ""
+
+# Metadata
+difficulty: "medium"
+playstyle: "chaos_engine"
+recommendedFor: "players who enjoy absurdity over strategy"
+author: "procedural_gen_v1"
+generatedAt: "2025-10-08T00:00:00Z"
+version: 1
