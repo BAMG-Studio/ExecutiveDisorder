@@ -1,0 +1,9 @@
+{
+  "id": "ban_all_birds_vo",
+  "text": "No more birds! They're spying on us!",
+  "style": "neutral",
+  "duration": 3.6,
+  "status": "placeholder",
+  "path": "unity/Assets/Audio/Voice/Generated/ban_all_birds_vo.mp3",
+  "provider": "mock"
+}

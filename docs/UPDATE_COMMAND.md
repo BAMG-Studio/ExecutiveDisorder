@@ -13,6 +13,7 @@ GitHub Copilot will automatically:
 - Verify Unity project integrity
 - Check for compilation errors
 - Validate asset references
+- Ensure scenes and data are scaffolded (runs `scripts/codex-init.sh` if needed)
 
 ### 2. **Create/Update Build Scripts** 📝
 - Generate new automation scripts as needed
@@ -89,6 +90,16 @@ git push codex-cli codex-cli:main
 
 # 5. Documentation
 # Auto-generate build reports
+```
+
+---
+
+## 🧱 Week 1 Bootstrap
+
+Initialize scenes, data, and settings:
+
+```
+bash scripts/codex-init.sh
 ```
 
 ---

@@ -1,0 +1,21 @@
+{
+  "leaders": [
+    {
+      "id": "corrupt_executive",
+      "name": "The Corrupt Executive",
+      "bio": "A smile wider than the deficit. Loves shortcuts and golden pens.",
+      "traitTags": ["greed", "spin"],
+      "startingDeck": ["ban_birds", "oxygen_tax"],
+      "portraitKey": "art/portraits/corrupt_executive"
+    },
+    {
+      "id": "meme_politician",
+      "name": "The Meme Politician",
+      "bio": "Speaks only in reaction images and viral catchphrases.",
+      "traitTags": ["memes", "charisma"],
+      "startingDeck": ["dance_vote", "ban_birds"],
+      "portraitKey": "art/portraits/meme_politician"
+    }
+  ]
+}
+

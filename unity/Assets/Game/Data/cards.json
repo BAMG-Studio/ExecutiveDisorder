@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "id": "ban_birds",
+      "name": "Ban All Birds",
+      "description": "A sweeping policy to outlaw birds. Upsets nature, delights conspiracy groups.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": ["policy", "absurd"],
+      "effects": [
+        {"type": "ApprovalDelta", "value": -3},
+        {"type": "AbsurdityDelta", "value": 8}
+      ],
+      "artKey": "art/cards/ban_birds"
+    },
+    {
+      "id": "oxygen_tax",
+      "name": "Tax Oxygen",
+      "description": "Monetize air. Great for revenue, terrible for panic.",
+      "cost": 2,
+      "rarity": "uncommon",
+      "tags": ["economy", "absurd"],
+      "effects": [
+        {"type": "EconomyDelta", "value": 5},
+        {"type": "PanicDelta", "value": 7}
+      ],
+      "artKey": "art/cards/oxygen_tax"
+    },
+    {
+      "id": "dance_vote",
+      "name": "Dance Vote",
+      "description": "Replace ballots with dance-offs. Youth love it, diplomats don't.",
+      "cost": 1,
+      "rarity": "common",
+      "tags": ["culture", "memes"],
+      "effects": [
+        {"type": "ApprovalDelta", "value": 4},
+        {"type": "ReputationDelta", "value": -2}
+      ],
+      "artKey": "art/cards/dance_vote"
+    }
+  ]
+}
+

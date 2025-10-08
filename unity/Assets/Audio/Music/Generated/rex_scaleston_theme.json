@@ -1,0 +1,8 @@
+{
+  "id": "rex_scaleston_theme",
+  "theme": "iguana_king_theme",
+  "duration": 120,
+  "status": "placeholder",
+  "path": "unity/Assets/Audio/Music/Generated/rex_scaleston_theme.mp3",
+  "provider": "mock"
+}

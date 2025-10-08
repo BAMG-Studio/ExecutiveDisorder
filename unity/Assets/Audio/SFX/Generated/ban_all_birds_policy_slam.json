@@ -1,0 +1,8 @@
+{
+  "id": "ban_all_birds_policy_slam",
+  "sfxKey": "policy_slam",
+  "duration": 2,
+  "status": "placeholder",
+  "path": "unity/Assets/Audio/SFX/Generated/ban_all_birds_policy_slam.wav",
+  "provider": "mock"
+}

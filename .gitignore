@@ -197,3 +197,4 @@ ipch/
 # Embedded git repositories (avoid committing nested repos)
 ExecutiveDisorder-Unity-Template/
 ExecutiveDisorder_Unity6_Complete/ExecutiveDisorder-Unity-Template/
+unity/Assets/Resources/WebGLBuild.wasm

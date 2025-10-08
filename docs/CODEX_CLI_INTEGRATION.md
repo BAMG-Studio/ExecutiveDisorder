@@ -96,9 +96,10 @@ git push codex-cli main
 
 Codex CLI will:
 1. Clone from `BAMG-Studio/ExecutiveDisorder`
-2. Build WebGL using Unity command-line
-3. Commit build artifacts
-4. Push back to `codex-cli` remote
+2. Run data import (auto during build) or manually via `scripts/codex-import-data.sh`
+3. Build WebGL using Unity command-line
+4. Commit build artifacts
+5. Push back to `codex-cli` remote
 
 ---
 
@@ -228,7 +229,7 @@ git push codex-cli main --force  # Force only for first time
 **I will create:**
 
 1. **`scripts/codex-build-webgl.sh`** - Codex CLI build script
-2. **`unity/Assets/Editor/AutoBuildScript.cs`** - Unity automation
+2. **`unity/Assets/Editor/CodexDataImporter.cs`** - JSON→ScriptableObjects importer (auto-run before build)
 3. **`.github/workflows/codex-build.yml`** - GitHub Actions (if needed)
 4. **`scripts/codex-deploy.sh`** - Deployment automation
 
@@ -247,7 +248,7 @@ Push to origin (protected)
        ↓
 Manually trigger: git push codex-cli main
        ↓
-Codex CLI builds automatically
+Codex CLI builds automatically (imports data first)
        ↓
 Build pushed to BAMG-Studio repo
        ↓

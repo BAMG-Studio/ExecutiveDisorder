@@ -1,0 +1,29 @@
+{
+  "crises": [
+    {
+      "id": "pigeon_uprising",
+      "name": "Pigeon Uprising",
+      "description": "City squares overrun by organized pigeons. Feathers everywhere.",
+      "severity": 2,
+      "tags": ["nature", "absurd"],
+      "effects": [
+        {"type": "ApprovalDelta", "value": -2},
+        {"type": "PanicDelta", "value": 3}
+      ],
+      "next": ["supply_seed_shortage"]
+    },
+    {
+      "id": "supply_seed_shortage",
+      "name": "Seed Supply Shortage",
+      "description": "Sunflower seed prices spike; pigeons negotiate.",
+      "severity": 3,
+      "tags": ["economy"],
+      "effects": [
+        {"type": "EconomyDelta", "value": -3},
+        {"type": "ReputationDelta", "value": -1}
+      ],
+      "next": []
+    }
+  ]
+}
+

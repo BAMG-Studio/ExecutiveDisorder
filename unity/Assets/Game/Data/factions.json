@@ -1,0 +1,19 @@
+{
+  "factions": [
+    {
+      "id": "bureaucrats",
+      "name": "Bureaucrats",
+      "description": "Paper, stamps, and endless forms. Prefer stability over spectacle.",
+      "color": "#4E9F3D",
+      "tags": ["order", "economy"]
+    },
+    {
+      "id": "meme_syndicate",
+      "name": "Meme Syndicate",
+      "description": "Chaos merchants with a knack for virality.",
+      "color": "#E84545",
+      "tags": ["memes", "chaos"]
+    }
+  ]
+}
+
