@@ -13,9 +13,10 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-UNITY_VERSION="6000.0.23f1"
+UNITY_VERSION="6000.2.6f2"  # Updated to installed version
 UNITY_PATH="/mnt/c/Program Files/Unity/Hub/Editor/${UNITY_VERSION}/Editor/Unity.exe"
-PROJECT_PATH="/mnt/c/Users/POK28/source/repos/ExecutiveDisorderReplit/unity"
+PROJECT_PATH_WIN="C:/Users/POK28/source/repos/ExecutiveDisorderReplit/unity"  # Windows path for Unity
+PROJECT_PATH_UNIX="/mnt/c/Users/POK28/source/repos/ExecutiveDisorderReplit/unity"  # Unix path for checks
 BUILD_METHOD="CodexBuildScript.BuildWebGL"
 LOG_FILE="build-$(date +%Y%m%d_%H%M%S).log"
 
@@ -33,8 +34,8 @@ fi
 echo -e "${GREEN}✅ Unity found: $UNITY_VERSION${NC}"
 
 # Check if project exists
-if [ ! -d "$PROJECT_PATH" ]; then
-    echo -e "${RED}❌ Project not found at: $PROJECT_PATH${NC}"
+if [ ! -d "$PROJECT_PATH_UNIX" ]; then
+    echo -e "${RED}❌ Project not found at: $PROJECT_PATH_WIN${NC}"
     exit 1
 fi
 
@@ -44,7 +45,7 @@ echo ""
 # Display build info
 echo -e "${BLUE}Build Configuration:${NC}"
 echo "  Unity Version: $UNITY_VERSION"
-echo "  Project Path:  $PROJECT_PATH"
+echo "  Project Path:  $PROJECT_PATH_WIN"
 echo "  Build Method:  $BUILD_METHOD"
 echo "  Log File:      $LOG_FILE"
 echo ""
@@ -57,7 +58,7 @@ echo ""
 "$UNITY_PATH" \
     -batchmode \
     -nographics \
-    -projectPath "$PROJECT_PATH" \
+    -projectPath "$PROJECT_PATH_WIN" \
     -executeMethod "$BUILD_METHOD" \
     -quit \
     -logFile "$LOG_FILE"
@@ -78,7 +79,7 @@ if [ $BUILD_EXIT_CODE -eq 0 ]; then
     fi
     
     echo ""
-    echo -e "${GREEN}📦 Build output: $PROJECT_PATH/Builds/WebGL/${NC}"
+    echo -e "${GREEN}📦 Build output: $PROJECT_PATH_WIN/Builds/WebGL/${NC}"
     
     # Commit to git (Codex CLI will handle this)
     echo ""
