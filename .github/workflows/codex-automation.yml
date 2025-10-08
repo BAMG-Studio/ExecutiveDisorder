@@ -1,0 +1,118 @@
+name: Codex CLI Automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      theme:
+        description: 'Content theme to generate'
+        required: false
+        default: 'political-satire'
+        type: choice
+        options:
+          - political-satire
+          - cyberpunk
+          - fantasy
+          - sci-fi
+  schedule:
+    # Run every Monday at 2 AM UTC
+    - cron: '0 2 * * 1'
+
+jobs:
+  generate-content:
+    name: Generate Game Content
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          lfs: true
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      
+      - name: Install Python Dependencies
+        run: |
+          pip install openai PyYAML pydantic
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install Codex CLI
+        run: |
+          npm install -g @openai/codex
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      - name: Update Theme Configuration
+        if: github.event.inputs.theme != ''
+        run: |
+          echo "Updating theme to: ${{ github.event.inputs.theme }}"
+          # Update theme.json with selected theme
+          jq '.theme = "${{ github.event.inputs.theme }}"' theme.json > theme.tmp.json
+          mv theme.tmp.json theme.json
+      
+      - name: Generate Content
+        run: |
+          echo "🎨 Generating game content..."
+          python tools/gen_content.py
+          python tools/gen_images.py
+          python tools/gen_audio.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      - name: Import Data to Unity
+        run: |
+          bash scripts/codex-import-data.sh || echo "Unity import skipped (requires Unity Editor)"
+      
+      - name: Check for Changes
+        id: git-check
+        run: |
+          git diff --exit-code || echo "changes=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit Generated Content
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add data/ unity/Assets/Game/ unity/Assets/Art/Generated/ unity/Assets/Audio/
+          git add theme.json
+          
+          git commit -m "🤖 Auto-generate content via Codex CLI
+          
+          Theme: ${{ github.event.inputs.theme || 'political-satire' }}
+          Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
+          Workflow: ${{ github.workflow }}
+          Run: ${{ github.run_number }}"
+          
+          git push
+      
+      - name: Create Summary
+        run: |
+          echo "### 🤖 Content Generation Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Theme:** ${{ github.event.inputs.theme || 'political-satire' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Generated Files:**" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -d "unity/Assets/Art/Generated" ]; then
+            image_count=$(find unity/Assets/Art/Generated -name "*.json" | wc -l)
+            echo "- 🎨 Images: $image_count" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -d "unity/Assets/Audio" ]; then
+            audio_count=$(find unity/Assets/Audio -name "*.json" | wc -l)
+            echo "- 🎵 Audio: $audio_count" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ -d "data" ]; then
+            data_count=$(find data -name "*.yaml" | wc -l)
+            echo "- 📋 Data: $data_count YAML files" >> $GITHUB_STEP_SUMMARY
+          fi

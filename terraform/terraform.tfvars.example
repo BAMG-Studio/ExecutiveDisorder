@@ -1,0 +1,17 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and fill in your actual values
+# DO NOT COMMIT terraform.tfvars TO GIT!
+
+github_token = "ghp_YourGitHubPersonalAccessToken"
+github_owner = "BAMG-Studio"
+
+# Unity credentials (optional, can be set via GitHub UI)
+# unity_license  = "base64_encoded_license_content"
+# unity_email    = "your-unity-email@example.com"
+# unity_password = "your-unity-password"
+
+# OpenAI API key (optional, can be set via GitHub UI)
+# openai_api_key = "sk-your-openai-api-key"
+
+# Custom domain for GitHub Pages (optional)
+# custom_domain = "play.bamg-studio.com"

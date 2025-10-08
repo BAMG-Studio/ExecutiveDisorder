@@ -198,3 +198,39 @@ ipch/
 ExecutiveDisorder-Unity-Template/
 ExecutiveDisorder_Unity6_Complete/ExecutiveDisorder-Unity-Template/
 unity/Assets/Resources/WebGLBuild.wasm
+
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/terraform.tfvars
+terraform/.terraform.tfstate.lock.info
+terraform/tfplan
+terraform/crash.log
+terraform/override.tf
+terraform/override.tf.json
+terraform/*_override.tf
+terraform/*_override.tf.json
+
+# Python virtual environment
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,172 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, codex-cli ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build Unity WebGL
+  build-webgl:
+    name: Build Unity WebGL
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      
+      - name: Create LFS file list
+        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+      
+      - name: Restore LFS cache
+        uses: actions/cache@v3
+        with:
+          path: .git/lfs
+          key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: |
+            ${{ runner.os }}-lfs-
+      
+      - name: Git LFS Pull
+        run: |
+          git lfs pull
+          git add .
+          git reset --hard
+      
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: unity/Library
+          key: Library-WebGL-${{ hashFiles('unity/Assets/**', 'unity/Packages/**', 'unity/ProjectSettings/**') }}
+          restore-keys: |
+            Library-WebGL-
+            Library-
+      
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: false
+          docker-images: true
+          swap-storage: true
+      
+      - name: Build Unity Project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: unity
+          targetPlatform: WebGL
+          buildsPath: build
+          buildName: ExecutiveDisorder
+          versioning: Semantic
+          # Use Unity version from variable or default
+          unityVersion: ${{ vars.UNITY_VERSION || '6000.0.23f1' }}
+          
+      - name: Fix WebGL CORS Headers
+        run: |
+          # Add .htaccess for CORS headers
+          cat > build/WebGL/ExecutiveDisorder/.htaccess << 'EOF'
+          <IfModule mod_headers.c>
+            Header set Cross-Origin-Embedder-Policy "require-corp"
+            Header set Cross-Origin-Opener-Policy "same-origin"
+          </IfModule>
+          EOF
+      
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: WebGL-Build-${{ github.sha }}
+          path: build/WebGL/ExecutiveDisorder
+          retention-days: 14
+      
+      - name: Upload Build to Pages Artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: build/WebGL/ExecutiveDisorder
+  
+  # Validate code quality
+  validate-code:
+    name: Validate Code Quality
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      
+      - name: Install Python Dependencies
+        run: |
+          pip install black pylint yamllint
+      
+      - name: Check Python Formatting
+        run: |
+          black --check tools/ || echo "Run 'black tools/' to format"
+      
+      - name: Lint Python Files
+        run: |
+          pylint tools/*.py --exit-zero
+      
+      - name: Validate YAML Schemas
+        run: |
+          yamllint data/ -c .yamllint || true
+      
+      - name: Check for Duplicate C# Classes
+        run: |
+          # Simple duplicate class check
+          find unity/Assets -name "*.cs" -type f | while read file; do
+            filename=$(basename "$file")
+            count=$(find unity/Assets -name "$filename" -type f | wc -l)
+            if [ $count -gt 1 ]; then
+              echo "⚠️  Duplicate class found: $filename"
+              find unity/Assets -name "$filename" -type f
+            fi
+          done
+  
+  # Deploy to GitHub Pages (only on main branch)
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main'
+    needs: [build-webgl, validate-code]
+    runs-on: ubuntu-latest
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+      
+      - name: Post Deployment Summary
+        run: |
+          echo "### 🚀 Deployment Successful!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Game URL:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY

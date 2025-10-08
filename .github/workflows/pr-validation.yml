@@ -1,0 +1,95 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate:
+    name: Validate Pull Request
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      
+      - name: Install Python Tools
+        run: |
+          pip install black pylint yamllint
+      
+      - name: Check Python Code Style
+        run: |
+          echo "### 🐍 Python Code Quality" >> $GITHUB_STEP_SUMMARY
+          black --check tools/ && echo "✅ Black formatting passed" >> $GITHUB_STEP_SUMMARY || {
+            echo "❌ Black formatting failed" >> $GITHUB_STEP_SUMMARY
+            echo "Run: \`black tools/\`" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          }
+      
+      - name: Lint Python
+        run: |
+          pylint tools/*.py --exit-zero > pylint-report.txt
+          cat pylint-report.txt
+          echo "### 📊 Pylint Report" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat pylint-report.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+      
+      - name: Validate YAML
+        run: |
+          echo "### 📋 YAML Validation" >> $GITHUB_STEP_SUMMARY
+          yamllint data/ && echo "✅ YAML validation passed" >> $GITHUB_STEP_SUMMARY || {
+            echo "⚠️  YAML validation warnings" >> $GITHUB_STEP_SUMMARY
+          }
+      
+      - name: Check for Duplicate Classes
+        run: |
+          echo "### 🔍 Duplicate Class Check" >> $GITHUB_STEP_SUMMARY
+          duplicates_found=0
+          find unity/Assets -name "*.cs" -type f | while read file; do
+            filename=$(basename "$file")
+            matches=$(find unity/Assets -name "$filename" -type f)
+            count=$(echo "$matches" | wc -l)
+            if [ $count -gt 1 ]; then
+              echo "⚠️  Duplicate: $filename" >> $GITHUB_STEP_SUMMARY
+              echo "$matches" | sed 's/^/  - /' >> $GITHUB_STEP_SUMMARY
+              duplicates_found=$((duplicates_found + 1))
+            fi
+          done
+          if [ $duplicates_found -eq 0 ]; then
+            echo "✅ No duplicate classes found" >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: Check File Sizes
+        run: |
+          echo "### 📦 Large Files Check" >> $GITHUB_STEP_SUMMARY
+          large_files=$(find . -type f -size +10M -not -path "./.git/*" -not -path "./unity/Library/*" -not -path "./venv/*")
+          if [ -z "$large_files" ]; then
+            echo "✅ No large files without LFS" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️  Large files detected (consider Git LFS):" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            echo "$large_files" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: PR Size Check
+        run: |
+          files_changed=$(git diff --name-only origin/main...HEAD | wc -l)
+          echo "### 📊 PR Statistics" >> $GITHUB_STEP_SUMMARY
+          echo "- Files changed: $files_changed" >> $GITHUB_STEP_SUMMARY
+          
+          if [ $files_changed -gt 100 ]; then
+            echo "⚠️  Large PR detected. Consider splitting into smaller PRs." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ PR size is manageable" >> $GITHUB_STEP_SUMMARY
+          fi
