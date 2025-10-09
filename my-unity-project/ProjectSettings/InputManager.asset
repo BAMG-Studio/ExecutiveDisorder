@@ -1,0 +1,53 @@
+m_InputManager: 
+  m_Axes:
+  - m_Name: Horizontal
+    m_DescriptiveName: 
+    m_DescriptiveNegativeName: 
+    m_NegativeButton: left
+    m_PositiveButton: right
+    m_AltNegativeButton: 
+    m_AltPositiveButton: 
+    m_Sensitivity: 1
+    m_Gravity: 3
+    m_Type: Key
+    m_IsButton: 0
+    m_Snap: 0
+    m_Invert: 0
+    m_AllowKey: 1
+    m_AllowMouse: 1
+    m_AllowJoystick: 1
+    m_Force: 0
+  - m_Name: Vertical
+    m_DescriptiveName: 
+    m_DescriptiveNegativeName: 
+    m_NegativeButton: down
+    m_PositiveButton: up
+    m_AltNegativeButton: 
+    m_AltPositiveButton: 
+    m_Sensitivity: 1
+    m_Gravity: 3
+    m_Type: Key
+    m_IsButton: 0
+    m_Snap: 0
+    m_Invert: 0
+    m_AllowKey: 1
+    m_AllowMouse: 1
+    m_AllowJoystick: 1
+    m_Force: 0
+  - m_Name: Jump
+    m_DescriptiveName: 
+    m_DescriptiveNegativeName: 
+    m_NegativeButton: 
+    m_PositiveButton: space
+    m_AltNegativeButton: 
+    m_AltPositiveButton: 
+    m_Sensitivity: 1
+    m_Gravity: 3
+    m_Type: Key
+    m_IsButton: 1
+    m_Snap: 0
+    m_Invert: 0
+    m_AllowKey: 1
+    m_AllowMouse: 1
+    m_AllowJoystick: 1
+    m_Force: 0

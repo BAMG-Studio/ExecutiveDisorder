@@ -234,3 +234,10 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+## Security / Secrets
+*.env
+*Secrets*/
+*Keys*/
+*.pem
+*.pfx
+*.keystore

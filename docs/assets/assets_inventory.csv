@@ -1,0 +1,109 @@
+﻿"Category","RelativePath","Extension","SizeKB","Width","Height"
+"Animations","unity\Assets\Plugins\New Animation.anim",".anim","5752.25",,
+"Audio.Music","unity\Assets\Audio\Sounds\newsreportmusic-6242.mp3",".mp3","502.97",,
+"Audio.SFX","unity\Assets\Audio\Sounds\alarm-301729.mp3",".mp3","717.55",,
+"Audio.SFX","unity\Assets\Audio\Sounds\alien-alert-noise-287332.mp3",".mp3","369",,
+"Audio.SFX","unity\Assets\Audio\Sounds\applause-236785.mp3",".mp3","254.25",,
+"Audio.SFX","unity\Assets\Audio\Sounds\boo-36556.mp3",".mp3","37.03",,
+"Audio.SFX","unity\Assets\Audio\Sounds\busy-town-square-48608.mp3",".mp3","14974.22",,
+"Audio.SFX","unity\Assets\Audio\Sounds\correct-6033.mp3",".mp3","18.28",,
+"Audio.SFX","unity\Assets\Audio\Sounds\crowd-noise-284490.mp3",".mp3","690.75",,
+"Audio.SFX","unity\Assets\Audio\Sounds\cuckoo-clock-359874.mp3",".mp3","253.06",,
+"Audio.SFX","unity\Assets\Audio\Sounds\dirty-siren-40635.mp3",".mp3","79.22",,
+"Audio.SFX","unity\Assets\Audio\Sounds\glitch-sfx-312910.mp3",".mp3","54.75",,
+"Audio.SFX","unity\Assets\Audio\Sounds\hong-kong-eas-alarm-391340.mp3",".mp3","615.51",,
+"Audio.SFX","unity\Assets\Audio\Sounds\menu-change-89197.mp3",".mp3","18.78",,
+"Audio.SFX","unity\Assets\Audio\Sounds\park-6026.mp3",".mp3","5450.62",,
+"Audio.SFX","unity\Assets\Audio\Sounds\party-balloon-pop-323588.mp3",".mp3","32.25",,
+"Audio.SFX","unity\Assets\Audio\Sounds\party-horn-68443.mp3",".mp3","455.16",,
+"Audio.SFX","unity\Assets\Audio\Sounds\relaxing-guitar-loop-v5-245859.mp3",".mp3","572.24",,
+"Audio.SFX","unity\Assets\Audio\Sounds\stamp-81635.mp3",".mp3","12.66",,
+"Audio.SFX","unity\Assets\Audio\Sounds\tv-shutdown-386167.mp3",".mp3","40",,
+"Audio.SFX","unity\Assets\Audio\Sounds\walking-up-stairs-86304.mp3",".mp3","243.28",,
+"Audio.SFX","unity\Assets\Audio\Sounds\wrong-answer-126515.mp3",".mp3","44.9",,
+"Audio.SFX","unity\Assets\Plugins\New Audio Clip 1.wav",".wav","936.04",,
+"Audio.SFX","unity\Assets\Plugins\New Audio Clip 2.wav",".wav","936.04",,
+"Audio.SFX","unity\Assets\Plugins\New Audio Clip.wav",".wav","936.04",,
+"Brand.Logos","unity\Assets\Art\zzExecutive Disorder Initial logo.png",".png","306.61","796","294"
+"Brand.Logos","unity\Assets\Audio\Sounds\tv-opening-news-logo-154230.mp3",".mp3","200.82",,
+"Fonts","unity\Assets\TextMesh Pro\Fonts\3D-Marquee-.ttf.ttf",".ttf","391.14",,
+"Fonts","unity\Assets\TextMesh Pro\Fonts\Anton-Regular.ttf",".ttf","157.8",,
+"Fonts","unity\Assets\TextMesh Pro\Fonts\LiberationSans.ttf",".ttf","341.99",,
+"Fonts","unity\Assets\TextMesh Pro\Fonts\Outspace Fighter.ttf",".ttf","78.56",,
+"Fonts","unity\Assets\TextMesh Pro\Fonts\Spaclar.ttf",".ttf","50.8",,
+"Fonts","unity\Assets\TextMesh Pro\Fonts\Termit.ttf",".ttf","46.93",,
+"Portraits.Executives","unity\Assets\Art\FullBodyMask.png",".png","3.52","500","1080"
+"Portraits.Executives","unity\Assets\Art\Ironfist presido.png",".png","1150.95","1024","1024"
+"Portraits.Executives","unity\Assets\Art\MadamCashFullbody.png",".png","764.39","575","977"
+"Portraits.Executives","unity\Assets\Art\MadamCashPortrait.png",".png","309.64","493","538"
+"Portraits.Executives","unity\Assets\Art\placeholderpresi.png",".png","328.63","512","512"
+"Portraits.Executives","unity\Assets\Art\TheTechnocrat.png",".png","2156.88","1024","1536"
+"Portraits.Executives","unity\Assets\Art\TheTechnocratPortrait.png",".png","772.26","1024","780"
+"Prefabs","unity\Assets\Prefabs\CardDecisionOptionHolder.prefab",".prefab","17.88",,
+"Prefabs","unity\Assets\Prefabs\CardDecisionOptionHolderCrisisVariant.prefab",".prefab","8.57",,
+"Prefabs","unity\Assets\Prefabs\CardHolder.prefab",".prefab","79.6",,
+"Prefabs","unity\Assets\Prefabs\charactercardHolder.prefab",".prefab","12.31",,
+"Prefabs","unity\Assets\Prefabs\characterpanel_image.prefab",".prefab","32.79",,
+"Prefabs","unity\Assets\Prefabs\Confeti.prefab",".prefab","115.74",,
+"Prefabs","unity\Assets\Prefabs\ConfetiEffect.prefab",".prefab","6.22",,
+"Prefabs","unity\Assets\Prefabs\CrisisHolder.prefab",".prefab","101.97",,
+"Prefabs","unity\Assets\Prefabs\CrowdReaction.prefab",".prefab","13.66",,
+"Prefabs","unity\Assets\Prefabs\EndingHolder.prefab",".prefab","12.7",,
+"Prefabs","unity\Assets\Prefabs\EndingResourceHolder.prefab",".prefab","5.37",,
+"Prefabs","unity\Assets\Prefabs\FakenewsHolder.prefab",".prefab","14.7",,
+"Prefabs","unity\Assets\Prefabs\infoHolder.prefab",".prefab","7.49",,
+"Prefabs","unity\Assets\Prefabs\MainMenuActionsButtons.prefab",".prefab","54.74",,
+"Prefabs","unity\Assets\Prefabs\MeMedia.prefab",".prefab","55.74",,
+"Prefabs","unity\Assets\Prefabs\memePostHolder.prefab",".prefab","40.14",,
+"Prefabs","unity\Assets\Prefabs\memeSeparatorline_image.prefab",".prefab","2.15",,
+"Prefabs","unity\Assets\Prefabs\RedFlash.prefab",".prefab","2.63",,
+"Prefabs","unity\Assets\Prefabs\Resource_image.prefab",".prefab","8.82",,
+"Prefabs","unity\Assets\Prefabs\ResourceBar.prefab",".prefab","23.87",,
+"Prefabs","unity\Assets\Prefabs\resourceHolder 1.prefab",".prefab","10.51",,
+"Prefabs","unity\Assets\Prefabs\ResourceHolder.prefab",".prefab","20.45",,
+"Prefabs","unity\Assets\Prefabs\StakeHolder_btn.prefab",".prefab","7.54",,
+"Prefabs","unity\Assets\Prefabs\startingResourceHolder.prefab",".prefab","29.37",,
+"Scenes.Backgrounds","unity\Assets\Art\CrisisNews.png",".png","2853.07","1536","1024"
+"Scenes.Backgrounds","unity\Assets\Art\MainBGAfternoon.png",".png","2515.84","1536","1024"
+"Scenes.Backgrounds","unity\Assets\Art\MainBGDesk.png",".png","170.6","1536","1024"
+"Scenes.Backgrounds","unity\Assets\Art\MainBGMorning.png",".png","2660.76","1536","1024"
+"Scenes.Backgrounds","unity\Assets\Art\MainBGNight.png",".png","1979.12","1536","1024"
+"Scenes.Backgrounds","unity\Assets\Art\MainBGNoDesk.png",".png","2802.84","1536","1024"
+"Scenes.Backgrounds","unity\Assets\Art\NewsCrisisScreenHolder.png",".png","87.95","753","563"
+"UI.Icons","unity\Assets\Art\DecisionDelayIcon.png",".png","228.55","617","599"
+"UI.Icons","unity\Assets\Art\DownArrow.png",".png","9.8","728","723"
+"UI.Icons","unity\Assets\Art\DownArrowClear.png",".png","4.57","728","723"
+"UI.Icons","unity\Assets\Art\EconomicIcon.png",".png","884.51","721","715"
+"UI.Icons","unity\Assets\Art\MediaIcon.png",".png","880.25","722","714"
+"UI.Icons","unity\Assets\Art\PopularityIcon.png",".png","810.95","722","716"
+"UI.Icons","unity\Assets\Art\StabilityIcon.png",".png","875.84","723","718"
+"UI.Icons","unity\Assets\Art\UpArrow.png",".png","9.84","728","723"
+"UI.Icons","unity\Assets\Art\UpArrowClear.png",".png","4.58","728","723"
+"UI.Icons","unity\Assets\Art\Warning.png",".png","1485.57","1024","1024"
+"UI.Icons","unity\Assets\Plugins\Demigiant\DOTween\Editor\Imgs\DOTweenIcon.png",".png","1.53","93","18"
+"UI.Icons","unity\Assets\Plugins\Demigiant\DOTween\Editor\Imgs\DOTweenMiniIcon.png",".png","0.31","9","9"
+"Uncategorized","unity\Assets\Art\ChatGPT Image 10 may 2025, 20_59_03.png",".png","2446.98","1536","1024"
+"Uncategorized","unity\Assets\Art\ChatGPT Image 4 may 2025, 11_44_59.png",".png","2875.14","1536","1024"
+"Uncategorized","unity\Assets\Art\Circle.png",".png","7.76","728","723"
+"Uncategorized","unity\Assets\Art\CircleMask.png",".png","4.15","728","723"
+"Uncategorized","unity\Assets\Art\Clipboard.png",".png","1509.83","1024","1024"
+"Uncategorized","unity\Assets\Art\Clock.png",".png","13.45","882","859"
+"Uncategorized","unity\Assets\Art\CrowdHappy.png",".png","1106.36","1024","1024"
+"Uncategorized","unity\Assets\Art\EmojiOne.png",".png","110.31","512","512"
+"Uncategorized","unity\Assets\Art\FakeNewsPlaceHolder.png",".png","3364.08","1536","1024"
+"Uncategorized","unity\Assets\Art\folder.png",".png","5.77","163","161"
+"Uncategorized","unity\Assets\Art\Incognito.png",".png","30.53","149","152"
+"Uncategorized","unity\Assets\Art\NationwideOutRage.png",".png","2829.6","1024","1536"
+"Uncategorized","unity\Assets\Art\PigeonUprisingImminent.png",".png","2026.5","1024","1024"
+"Uncategorized","unity\Assets\Art\PlaceholderccButterfly.png",".png","70.34","400","583"
+"Uncategorized","unity\Assets\Art\WhiteCircle.png",".png","33.34","1080","1080"
+"Uncategorized","unity\Assets\Plugins\Demigiant\DOTween\Editor\Imgs\Footer.png",".png","4.31","194","24"
+"Uncategorized","unity\Assets\Plugins\Demigiant\DOTween\Editor\Imgs\Footer_dark.png",".png","4.33","194","24"
+"Uncategorized","unity\Assets\Plugins\Demigiant\DOTween\Editor\Imgs\Header.jpg",".jpg","22.25","512","164"
+"Uncategorized","unity\Assets\Plugins\New Material_Generated Maps\BaseMap.png",".png","520.86","512","512"
+"Uncategorized","unity\Assets\Plugins\New Sprite 1.png",".png","2514.46","2048","2048"
+"Uncategorized","unity\Assets\Plugins\New Sprite.png",".png","814.43","1024","1024"
+"Uncategorized","unity\Assets\Plugins\New Terrain Layer_Generated Terrain Maps\Diffuse.png",".png","423.79","512","512"
+"Uncategorized","unity\Assets\Plugins\New Texture 1.png",".png","1504.48","1024","1024"
+"Uncategorized","unity\Assets\Plugins\New Texture.png",".png","798.78","1024","1024"
+"Uncategorized","unity\Assets\TextMesh Pro\Sprites\EmojiOne.png",".png","109.69","512","512"
