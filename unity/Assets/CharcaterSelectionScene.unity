@@ -1513,9 +1513,9 @@ MonoBehaviour:
   - id: 11
     clip: {fileID: 8300000, guid: 3bc28514ed892694fae87f7d4b4d5066, type: 3}
     volumeMul: 1
-  - id: 11
+  - id: 12
     clip: {fileID: 8300000, guid: 529b9074d35297a44985663bb375654e, type: 3}
-    volumeMul: 0.1
+    volumeMul: 0.05
   - id: 13
     clip: {fileID: 8300000, guid: be3112cc66e78974e9117ed5b7dfa2e9, type: 3}
     volumeMul: 0.05

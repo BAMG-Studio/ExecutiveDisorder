@@ -1,13 +1,15 @@
 param(
-  [string]$AssetsRoot,
-  [string]$OutDir
+  [string[]]$Roots,
+  [string]$OutDir,
+  [int]$LargeKB
 )
 
 $ErrorActionPreference = 'Stop'
 
 function Ensure-Dir($p){ if(!(Test-Path $p)){ New-Item -ItemType Directory -Path $p | Out-Null } }
-if(-not $AssetsRoot){ $AssetsRoot = 'unity/Assets' }
+if(-not $Roots){ $Roots = @('unity/Assets','ExecutiveDisorder_Unity6_Complete/ExecutiveDisorder-Unity-Template/GameTemplate/Assets','ExecutiveDisorder-Unity-Template-Submodule/GameTemplate/Assets') }
 if(-not $OutDir){ $OutDir = 'docs/assets' }
+if(-not $LargeKB){ $LargeKB = 2048 }
 Ensure-Dir $OutDir
 
 function Get-Rel($path){
@@ -49,7 +51,8 @@ function Get-Category($f){
 }
 
 $patterns = '*.png','*.jpg','*.jpeg','*.psd','*.svg','*.ttf','*.otf','*.wav','*.mp3','*.ogg','*.mp4','*.webm','*.fbx','*.obj','*.prefab','*.anim','*.controller'
-$files = Get-ChildItem $AssetsRoot -Recurse -File -Include $patterns -ErrorAction SilentlyContinue
+$files = @()
+foreach($root in $Roots){ if(Test-Path $root){ $files += Get-ChildItem $root -Recurse -File -Include $patterns -ErrorAction SilentlyContinue | Where-Object { $_.FullName -notmatch '\\Library\\|\\PackageCache\\|\\node_modules\\|\\Temp\\|\\Logs\\|\\obj\\|\\bin\\' } } }
 
 $rows = @()
 foreach($f in $files){
@@ -59,8 +62,11 @@ foreach($f in $files){
     $s = Get-ImageSize $f.FullName
     $w = $s[0]; $h = $s[1]
   }
+  $srcRoot = ($Roots | Where-Object { ($f.FullName -replace '\\','/').ToLower().StartsWith((Resolve-Path $_).Path.Replace('\\','/').ToLower()) } | Select-Object -First 1)
+  if(-not $srcRoot){ $srcRoot = 'Unknown' }
   $rows += [PSCustomObject]@{
     Category = $cat
+    SourceRoot = $srcRoot
     RelativePath = (Get-Rel $f.FullName).Replace('\\','/')
     Extension = $f.Extension.ToLower()
     SizeKB = [math]::Round($f.Length/1KB,2)
@@ -71,6 +77,39 @@ foreach($f in $files){
 
 $inv = Join-Path $OutDir 'assets_inventory.csv'
 $rows | Sort-Object Category,RelativePath | Export-Csv -Path $inv -NoTypeInformation -Encoding UTF8
+
+# Create summaries
+$byCat = $rows | Group-Object Category | ForEach-Object {
+  [PSCustomObject]@{
+    Category = $_.Name
+    Count = $_.Count
+    TotalMB = [math]::Round(($_.Group | Measure-Object -Property SizeKB -Sum).Sum / 1024, 2)
+  }
+}
+$byCat | Sort-Object -Property Category | Export-Csv -Path (Join-Path $OutDir 'assets_summary_by_category.csv') -NoTypeInformation -Encoding UTF8
+
+$bySrc = $rows | Group-Object SourceRoot | ForEach-Object {
+  [PSCustomObject]@{
+    SourceRoot = $_.Name
+    Count = $_.Count
+    TotalMB = [math]::Round(($_.Group | Measure-Object -Property SizeKB -Sum).Sum / 1024, 2)
+  }
+}
+$bySrc | Sort-Object -Property SourceRoot | Export-Csv -Path (Join-Path $OutDir 'assets_summary_by_source.csv') -NoTypeInformation -Encoding UTF8
+
+# Duplicates by file name
+$dups = $rows | Group-Object { [System.IO.Path]::GetFileName($_.RelativePath) } | Where-Object { $_.Count -gt 1 } | ForEach-Object {
+  [PSCustomObject]@{
+    FileName = $_.Name
+    Count = $_.Count
+    Paths = ($_.Group | Select-Object -ExpandProperty RelativePath) -join '; '
+  }
+}
+$dups | Export-Csv -Path (Join-Path $OutDir 'duplicates_by_name.csv') -NoTypeInformation -Encoding UTF8
+
+# Large assets
+$large = $rows | Where-Object { $_.SizeKB -ge $LargeKB } | Sort-Object -Property SizeKB -Descending
+$large | Export-Csv -Path (Join-Path $OutDir 'large_assets.csv') -NoTypeInformation -Encoding UTF8
 
 # Missing plan
 $expected = @(

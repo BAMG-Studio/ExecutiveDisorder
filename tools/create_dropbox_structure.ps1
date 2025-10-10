@@ -16,6 +16,10 @@ $paths = @(
   'Portraits/Staff',
   'Portraits/Stakeholders',
   'Portraits/Crisis',
+  'Characters/Executives',
+  'Characters/Staff',
+  'Characters/Stakeholders',
+  'Characters/Crisis',
   'Scenes/Backgrounds',
   'Scenes/Crisis',
   'UI/Icons',
@@ -28,9 +32,9 @@ $paths = @(
   'Video/Openings',
   'Prefabs/UI',
   '3D/Models',
-  '3D/Props'
+  '3D/Props',
+  'Misc'
 )
 
 foreach($rel in $paths){ Ensure-Dir (Join-Path $base $rel) }
 Write-Host "Created/verified Dropbox structure under: $base"
-
